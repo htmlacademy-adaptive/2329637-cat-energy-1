@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Bloodhound](https://up.htmlacademy.ru/adaptive-individual/1/user/2329637).
-* Наставник: `Неизвестно`.
+* Наставник: [Николай котиков](https://htmlacademy.ru/profile/niklcat).
 
 ---
 
