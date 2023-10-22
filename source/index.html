@@ -1,12 +1,262 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <meta charset="utf-8" />
+    <title>Кэт энерджи</title>
+    <link rel="stylesheet" href="/source/css/style.css" />
   </head>
-  <body>
+  <body class="body">
+    <header class="header">
+      <svg class="header__logo"></svg>
+      <svg class="header__font-logo font-logo"></svg>
+      <nav class="navigation">
+        <button class="navigation__burger-menu" type="button">
+          <svg></svg>
+          <span class="visually-hidden"> Открыть меню </span>
+        </button>
+        <div class="navigation__wrapper">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#"> Главная </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="/source/catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="/source/form.html">
+                подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+    <main class="main-containter">
+      <section class="hero">
+        <h1 class="page-header">Функциональное питание для котов</h1>
+        <p class="header-slogan">занялся собой? займись котом!</p>
+        <img
+          class="hero__logo"
+          src="#"
+          alt="Упаковка кошачьего корма Cat Energy"
+        />
+        <a class="hero__button button-primary" href="#">
+          Подобрать программу
+        </a>
+      </section>
 
+      <section class="programms">
+        <h2 class="visually-hidden">Программы питания.</h2>
+
+        <div class="programm">
+          <h3 class="programm__heading subtitle">похудение</h3>
+          <p class="programm__text">
+            Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям? Пора на диету! Cat Energy Slim поможет Вашему питомцу
+            сбросить лишний вес.
+          </p>
+          <a class="programm__link" href="#"> каталог slim </a>
+        </div>
+
+        <div class="programm">
+          <h3 class="programm__heading subtitle">набор массы</h3>
+          <p class="programm__text">
+            Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+            Energy Pro поможет Вашему коту нарастить необходимые мышцы!
+          </p>
+          <a class="programm__link" href="#"> каталог pro </a>
+        </div>
+
+        <ul class="description">
+          <li class="description-item">
+            <svg class="description-item__icon"></svg>
+            <p class="description-item__text">
+              Функицональное питание содержит только полезные питательные
+              вещества.
+            </p>
+          </li>
+          <li class="description-item">
+            <svg class="description-item__icon"></svg>
+            <p class="description-item__text">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и
+              готово.
+            </p>
+          </li>
+          <li class="description-item">
+            <svg class="description-item__icon"></svg>
+            <p class="description-item__text">
+              Замените один-два приема обычной еды на наше функциональное
+              питание.
+            </p>
+          </li>
+          <li class="description-item">
+            <svg class="description-item__icon"></svg>
+            <p class="description-item__text">
+              Уже через месяц наслаждайтесь изменениями к лучшему вашего
+              питомца!
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="living-example">
+        <h2 class="living-example__heading">Живой пример</h2>
+        <p class="living-example__text">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+          этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+
+        <div class="results">
+          <span class="results__text"> 5 кг </span>
+          <span class="results__definition"> снижение веса </span>
+        </div>
+
+        <div class="results">
+          <span class="results__text"> 60 дней </span>
+          <span class="results__definition"> затрачено времени </span>
+        </div>
+
+        <p class="living-example__cost">затраты на питание: 15 000 руб.</p>
+
+        <div class="container">
+          <div class="image-container">
+            <img
+              class="image-before slider-image"
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              alt="вес кота до"
+            />
+            <img
+              class="image-after slider-image"
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+              alt="вес кота после"
+            />
+          </div>
+          <!-- step="10" -->
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            aria-label="Percentage of before photo shown"
+            class="slider"
+          />
+          <div class="slider-line" aria-hidden="true"></div>
+          <div class="slider-button" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <line
+                x1="128"
+                y1="40"
+                x2="128"
+                y2="216"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <line
+                x1="96"
+                y1="128"
+                x2="16"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <polyline
+                points="48 160 16 128 48 96"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+              <line
+                x1="160"
+                y1="128"
+                x2="240"
+                y2="128"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></line>
+              <polyline
+                points="208 96 240 128 208 160"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="map">
+        <div class="map__contacts contacts">
+          <p class="contacts__text">приглашаем к сотрудничеству дилеров</p>
+          <p class="contacts__address">
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__social social">
+        <svg class="social__logo font-logo"></svg>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a
+              class="social-item__link visually-hidden"
+              href="https://vk.com/htmlacademy"
+            >
+              Мы ВКонтакте
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a
+              class="social-item__link visually-hidden"
+              href="https://www.youtube.com/user/htmlacademyru"
+            >
+              Мы на YouTube
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a
+              class="social-item__link visually-hidden"
+              href="https://htmlacademy.ru/intensive/adaptive"
+            >
+              Мы в Telegram
+            </a>
+          </li>
+        </ul>
+        <div class="partners">
+          <p class="partners__text">HTML Academy</p>
+          <svg class="partners__logo"></svg>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/source/js/script.js"></script>
   </body>
 </html>
