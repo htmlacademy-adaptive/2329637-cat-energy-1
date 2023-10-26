@@ -1,0 +1,13 @@
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  height: 100%;
+}
+
+.main-containter {
+  flex-grow: 1;
+}

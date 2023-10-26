@@ -1,0 +1,50 @@
+.programm {
+  position: relative;
+}
+
+.programm__heading {
+  display: inline-block;
+  position: absolute;
+  margin: 5px 0 0 20px;
+}
+
+.programm__image-wrapper {
+  position: relative;
+  display: inline-block;
+  background-color: #68b738;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 22px;
+}
+
+.programm__image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.programm__text {
+  margin: 0;
+  margin-bottom: 15px;
+  padding-bottom: 23px;
+  width: 240px;
+
+  color: #444444;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.programm__link {
+  padding-right: 15px;
+
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.programm__link-wrapper::after {
+  content: url("../img/icon-arrow.svg");
+}

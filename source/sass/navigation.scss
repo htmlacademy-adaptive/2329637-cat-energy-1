@@ -1,0 +1,18 @@
+.navigation {
+  display: inline-block;
+}
+
+.navigation__wrapper {
+  display: none;
+}
+
+.navigation__wrapper--modal-open {
+  display: block;
+}
+
+.navigation__burger-menu {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  padding: 0;
+}
