@@ -29,7 +29,7 @@
   object-fit: cover;
 }
 
-.hero__page-header {
+.hero__header {
   margin: 0px auto 25px;
   width: 275px;
   padding-top: 27px;
@@ -37,7 +37,7 @@
   text-align: center;
 }
 
-.hero__page-header--color {
+.hero__header--color {
   color: #ffffff;
 }
 
@@ -54,4 +54,5 @@
 .hero__button {
   min-width: 280px;
   margin-top: auto;
+  margin-bottom: 20px;
 }
