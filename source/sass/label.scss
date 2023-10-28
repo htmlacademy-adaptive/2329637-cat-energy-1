@@ -1,0 +1,14 @@
+.label {
+  font-family: "Oswald", sans-serif;
+  color: #444444;
+  cursor: pointer;
+}
+
+.label__icon {
+  position: absolute;
+  right: 12px;
+}
+
+.label--uppercase {
+  text-transform: uppercase;
+}

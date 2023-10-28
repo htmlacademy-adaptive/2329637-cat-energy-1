@@ -6,7 +6,7 @@
 
 .living-example__wrapper {
   width: 280px;
-  padding-bottom: 40px;
+  padding: 0 20px 40px;
 }
 
 .living-example--bg-c {
@@ -14,6 +14,7 @@
 }
 
 .living-example__header {
+  padding-top: 25px;
   margin: 0;
   margin-bottom: 40px;
   align-self: flex-start;

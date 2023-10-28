@@ -1,0 +1,30 @@
+.custom-checkbox-button {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.custom-checkbox-mark {
+  position: relative;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+}
+
+.custom-checkbox-mark::after {
+  content: url("../img/checkbox-mark.svg");
+  position: absolute;
+  display: none;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-checkbox-button:checked ~ .custom-checkbox-mark::after {
+  display: block;
+}

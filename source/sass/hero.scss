@@ -9,7 +9,7 @@
 .hero__background-wrapper {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -20px;
   object-fit: cover;
   z-index: -1;
 }
@@ -52,7 +52,6 @@
 }
 
 .hero__button {
-  min-width: 280px;
   margin-top: auto;
   margin-bottom: 20px;
 }
