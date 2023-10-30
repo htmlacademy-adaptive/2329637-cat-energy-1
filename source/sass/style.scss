@@ -1,4 +1,5 @@
 @use "./body.scss";
+@use "./fonts.scss";
 @use "./sticky-footer.scss";
 @use "./visually-hidden.scss";
 @use "./navigation.scss";
@@ -27,3 +28,12 @@
 @use "./label.scss";
 @use "./custom-radio.scss";
 @use "./custom-checkbox.scss";
+@use "./catalog.scss";
+@use "./catalog-list.scss";
+@use "./card.scss";
+@use "./card-show-more.scss";
+@use "./button-secondary.scss";
+@use "./button.scss";
+@use "./other-products.scss";
+@use "./card-other-products.scss";
+@use "./promotion.scss";

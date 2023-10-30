@@ -1,0 +1,28 @@
+.card-show-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-show-more__image {
+  margin-bottom: 23px;
+}
+
+.card-show-more__header {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card-show-more__info {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card-show-more__button {
+  margin-top: 21px;
+}
