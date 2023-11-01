@@ -1,0 +1,36 @@
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  word-break: break-word;
+}
+
+.custom-checkbox__button {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.custom-checkbox__mark {
+  position: relative;
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+}
+
+.custom-checkbox__mark::after {
+  content: url("../img/form/checkbox-mark.svg");
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-checkbox__button:checked ~ .custom-checkbox__mark::after {
+  display: block;
+}

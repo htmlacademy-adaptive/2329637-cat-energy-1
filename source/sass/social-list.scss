@@ -1,0 +1,13 @@
+.social-list {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social-list__link {
+  display: block;
+  line-height: 0;
+}

@@ -1,0 +1,90 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card--show-more {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card--other-products {
+  flex-direction: column;
+  padding-top: 12px;
+  padding-bottom: 19px;
+}
+
+.card__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.card__image {
+  object-fit: cover;
+}
+
+.card__image--show-more {
+  margin-bottom: 23px;
+}
+
+.card__content {
+  width: 50%;
+}
+
+.card__header {
+  margin: 0 0 14px;
+  padding: 0;
+  width: 90px;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  word-break: break-word;
+}
+
+.card__header--show-more {
+  width: fit-content;
+  text-align: center;
+  margin: 0 0 8px;
+}
+
+.card__header--other-products {
+  width: 100%;
+  margin-bottom: 13px;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  word-break: break-word;
+  gap: 15px;
+}
+
+.card__info-right {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+.card__info--other-products {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.card__button {
+  margin-top: 17px;
+}
+
+.card__button--other-products {
+  margin-top: 15px;
+}
+
+.card__button--show-more {
+  margin-top: 21px;
+}

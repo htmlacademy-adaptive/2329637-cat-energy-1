@@ -1,0 +1,40 @@
+.fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fieldset__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 13px;
+}
+
+.fieldset__input {
+  width: 10px;
+  padding: 12px 15px;
+  flex-grow: 1;
+
+  font-size: 16px;
+  line-height: 19px;
+  border: 1px solid #e7e7e7;
+  font-family: "Oswald", sans-serif;
+  color: #444444;
+}
+
+.fieldset__textarea {
+  width: 100%;
+  min-height: 150px;
+  box-sizing: border-box;
+  padding: 14px;
+  resize: none;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+}
+
+.fieldset__icon {
+  position: absolute;
+  right: 12px;
+}

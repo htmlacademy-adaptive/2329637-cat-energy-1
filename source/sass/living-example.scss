@@ -1,0 +1,43 @@
+.living-example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  padding-top: 25px;
+}
+
+.living-example--bg-c {
+  background-color: #eaeaea;
+}
+
+.living-example__header {
+  margin: 0 0 40px;
+  align-self: flex-start;
+}
+
+.living-example__text {
+  margin: 0 0 20px;
+  word-break: break-word;
+}
+
+.living-example__text--color {
+  color: #444444;
+}
+
+.living-example__results-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 34px;
+}
+
+.living-example__cost {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0 20px;
+  font-weight: 700;
+  text-align: center;
+}

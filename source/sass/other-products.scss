@@ -1,0 +1,28 @@
+.other-products {
+  position: relative;
+}
+
+.other-products__header {
+  margin: 0 0 36px 0;
+}
+
+.other-products__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  list-style-type: none;
+}
+
+.other-products__item:last-child {
+  padding-bottom: 19px;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.other-products__promotion {
+  margin: 35px 20px 35px;
+  padding-top: 58px;
+  min-height: 290px;
+  box-sizing: border-box;
+}
