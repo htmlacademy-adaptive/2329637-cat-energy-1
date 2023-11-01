@@ -1,45 +1,52 @@
-.programm {
+.program {
   position: relative;
 }
 
-.programm__heading {
+.program__heading {
+  position: relative;
   display: inline-block;
-  position: absolute;
-  margin: 5px 0 0 20px;
+  margin: 0;
 
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 37px;
+  word-break: break-word;
 }
 
-.programm__image-wrapper {
-  position: relative;
-  display: inline-block;
-  background-color: #68b738;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.program__wrapper {
+  display: flex;
+  align-items: center;
   margin-bottom: 22px;
 }
 
-.programm__image {
+.program__image-wrapper {
+  position: relative;
+  display: inline-block;
+  background-color: #68b738;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.program__image {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.programm__text {
-  margin: 0;
-  margin-bottom: 15px;
+.program__text {
+  margin: 0 0 15px;
   padding-bottom: 23px;
-  width: 240px;
 
   color: #444444;
   border-bottom: 2px solid #d9d9d9;
+  word-break: break-word;
 }
 
-.programm__link {
+.program__link {
   padding-right: 15px;
 
   font-family: "Oswald", sans-serif;
@@ -49,6 +56,6 @@
   color: #000000;
 }
 
-.programm__link-wrapper::after {
-  content: url("../img/icon-arrow.svg");
+.program__link-wrapper::after {
+  content: url("../img/program/icon-arrow.svg");
 }

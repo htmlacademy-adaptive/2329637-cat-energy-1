@@ -15,15 +15,17 @@
   box-sizing: border-box;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
+  word-break: break-word;
 }
 
 .results__definition {
-  position: absolute;
+  position: relative;
   padding: 0 10px;
-  top: 46px;
+  top: -8px;
   font-size: 12px;
   line-height: 12px;
-  width: 55px;
+  width: 60px;
   text-align: center;
   background-color: #eaeaea;
+  word-break: break-word;
 }

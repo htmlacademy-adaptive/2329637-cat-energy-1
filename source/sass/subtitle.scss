@@ -1,22 +1,36 @@
 .subtitle {
   position: relative;
-  display: inline-block;
-  padding: 26px 10px 0 0;
+  padding: 26px 0 0;
   margin-bottom: 35px;
   background-color: #ffffff;
-
+  width: 100%;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
+}
+
+.subtitle__text {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  word-break: break-word;
+  max-width: 182px;
+}
+
+.subtitle__text--width {
+  max-width: 243px;
 }
 
 .subtitle::after {
   content: "";
   position: absolute;
   top: 40px;
-  left: 20px;
-  width: 280px;
+  right: 0;
+  left: 0;
   height: 2px;
   background-color: #68b738;
-  z-index: -1;
+  z-index: 1;
 }

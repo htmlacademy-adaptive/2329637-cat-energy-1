@@ -1,13 +1,20 @@
-.custom-radio-button {
+.custom-radio {
+  display: flex;
+  align-items: center;
+  word-break: break-word;
+}
+
+.custom-radio__button {
   position: absolute;
   width: 0;
   height: 0;
   opacity: 0;
 }
 
-.custom-radio-checkmark {
+.custom-radio__checkmark {
   position: relative;
   margin-right: 15px;
+  flex-shrink: 0;
   width: 30px;
   height: 30px;
   background-color: #ffffff;
@@ -17,7 +24,7 @@
   border-radius: 50%;
 }
 
-.custom-radio-checkmark::after {
+.custom-radio__checkmark::after {
   content: "";
   position: absolute;
   display: none;
@@ -32,6 +39,6 @@
   border-radius: 50%;
 }
 
-.custom-radio-button:checked ~ .custom-radio-checkmark::after {
+.custom-radio__button:checked ~ .custom-radio__checkmark::after {
   display: block;
 }

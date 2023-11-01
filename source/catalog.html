@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header header--border">
+    <header class="header">
       <div class="header__wrapper">
         <svg
           class="header__logo"
@@ -151,15 +151,17 @@
       </div>
     </header>
 
-    <main class="main-container">
+    <main>
       <section class="catalog">
-        <h1 class="catalog__header page-header">Каталог продукции</h1>
+        <h1 class="catalog__header page-header border-top main-container">
+          Каталог продукции
+        </h1>
         <ul class="catalog-list">
-          <li class="catalog-list__item card">
+          <li class="catalog-list__item card border-top main-container">
             <div class="card__image-wrapper">
               <img
                 class="card__image"
-                src="./img/chicken-pro-500g.png"
+                src="./img/card/chicken-pro-500g.png"
                 alt="Упаковка товара."
                 width="68"
                 height="87"
@@ -169,15 +171,15 @@
               <p class="card__header">CAT ENERGY PRO 500 Г</p>
               <div class="card__info">
                 <span> Масса </span>
-                <span> 500 г </span>
+                <span class="card__info-right"> 500 г </span>
               </div>
               <div class="card__info">
                 <span> Вкус </span>
-                <span> Курица </span>
+                <span class="card__info-right"> Курица </span>
               </div>
               <div class="card__info">
                 <span> Цена </span>
-                <span> 700 &#8381; </span>
+                <span class="card__info-right"> 700 &#8381; </span>
               </div>
             </div>
             <a class="card__button button-primary button button--long">
@@ -185,29 +187,29 @@
             </a>
           </li>
 
-          <li class="catalog-list__item card">
+          <li class="catalog-list__item card border-top main-container">
             <div class="card__image-wrapper">
               <img
                 class="card__image"
-                src="./img/chicken-pro-1000g.png"
+                src="./img/card/chicken-pro-1000g.png"
                 alt="Упаковка товара."
                 width="84"
-                height="100"
+                height="101"
               />
             </div>
             <div class="card__content">
               <p class="card__header">CAT ENERGY PRO 1000 Г</p>
               <div class="card__info">
                 <span> Масса </span>
-                <span> 1000 г </span>
+                <span class="card__info-right"> 1000 г </span>
               </div>
               <div class="card__info">
                 <span> Вкус </span>
-                <span> Курица </span>
+                <span class="card__info-right"> Курица </span>
               </div>
               <div class="card__info">
                 <span> Цена </span>
-                <span> 1000 &#8381; </span>
+                <span class="card__info-right"> 1000 &#8381; </span>
               </div>
             </div>
             <a class="card__button button-primary button button--long">
@@ -215,11 +217,11 @@
             </a>
           </li>
 
-          <li class="catalog-list__item card">
+          <li class="catalog-list__item card border-top main-container">
             <div class="card__image-wrapper">
               <img
                 class="card__image"
-                src="./img/fish-pro-500g.png"
+                src="./img/card/fish-pro-500g.png"
                 alt="Упаковка товара."
               />
             </div>
@@ -227,15 +229,15 @@
               <p class="card__header">CAT ENERGY PRO 500 Г</p>
               <div class="card__info">
                 <span> Масса </span>
-                <span> 500 г </span>
+                <span class="card__info-right"> 500 г </span>
               </div>
               <div class="card__info">
                 <span> Вкус </span>
-                <span> Рыба </span>
+                <span class="card__info-right"> Рыба </span>
               </div>
               <div class="card__info">
                 <span> Цена </span>
-                <span> 700 &#8381; </span>
+                <span class="card__info-right"> 700 &#8381; </span>
               </div>
             </div>
             <a class="card__button button-primary button button--long">
@@ -243,11 +245,11 @@
             </a>
           </li>
 
-          <li class="catalog-list__item card">
+          <li class="catalog-list__item card border-top main-container">
             <div class="card__image-wrapper">
               <img
                 class="card__image"
-                src="./img/fish-pro-1000g.png"
+                src="./img/card/fish-pro-1000g.png"
                 alt="Упаковка товара."
               />
             </div>
@@ -255,15 +257,15 @@
               <p class="card__header">CAT ENERGY PRO 1000 Г</p>
               <div class="card__info">
                 <span> Масса </span>
-                <span> 1000 г </span>
+                <span class="card__info-right"> 1000 г </span>
               </div>
               <div class="card__info">
                 <span> Вкус </span>
-                <span> Рыба </span>
+                <span class="card__info-right"> Рыба </span>
               </div>
               <div class="card__info">
                 <span> Цена </span>
-                <span> 1000 &#8381; </span>
+                <span class="card__info-right"> 1000 &#8381; </span>
               </div>
             </div>
             <a class="card__button button-primary button button--long">
@@ -271,11 +273,11 @@
             </a>
           </li>
 
-          <li class="catalog-list__item card">
+          <li class="catalog-list__item card border-top main-container">
             <div class="card__image-wrapper">
               <img
                 class="card__image"
-                src="./img/buckwheat-slim-500g.png"
+                src="./img/card/buckwheat-slim-500g.png"
                 alt="Упаковка товара."
               />
             </div>
@@ -283,15 +285,15 @@
               <p class="card__header">CAT ENERGY SLIM 500 Г</p>
               <div class="card__info">
                 <span> Масса </span>
-                <span> 500 г </span>
+                <span class="card__info-right"> 500 г </span>
               </div>
               <div class="card__info">
                 <span> Вкус </span>
-                <span> Гречка </span>
+                <span class="card__info-right"> Гречка </span>
               </div>
               <div class="card__info">
                 <span> Цена </span>
-                <span> 400 &#8381; </span>
+                <span class="card__info-right"> 400 &#8381; </span>
               </div>
             </div>
             <a class="card__button button-primary button button--long">
@@ -299,11 +301,11 @@
             </a>
           </li>
 
-          <li class="catalog-list__item card">
+          <li class="catalog-list__item card border-top main-container">
             <div class="card__image-wrapper">
               <img
                 class="card__image"
-                src="./img/buckwheat-slim-1000g.png"
+                src="./img/card/buckwheat-slim-1000g.png"
                 alt="Упаковка товара."
               />
             </div>
@@ -311,15 +313,15 @@
               <p class="card__header">CAT ENERGY SLIM 1000 Г</p>
               <div class="card__info">
                 <span> Масса </span>
-                <span> 1000 г </span>
+                <span class="card__info-right"> 1000 г </span>
               </div>
               <div class="card__info">
                 <span> Вкус </span>
-                <span> Гречка </span>
+                <span class="card__info-right"> Гречка </span>
               </div>
               <div class="card__info">
                 <span> Цена </span>
-                <span> 700 &#8381; </span>
+                <span class="card__info-right"> 700 &#8381; </span>
               </div>
             </div>
             <a class="card__button button-primary button button--long">
@@ -327,11 +329,11 @@
             </a>
           </li>
 
-          <li class="catalog-list__item card">
+          <li class="catalog-list__item card border-top main-container">
             <div class="card__image-wrapper">
               <img
                 class="card__image"
-                src="./img/rice-slim-500g.png"
+                src="./img/card/rice-slim-500g.png"
                 alt="Упаковка товара."
               />
             </div>
@@ -339,15 +341,15 @@
               <p class="card__header">CAT ENERGY SLIM 500 Г</p>
               <div class="card__info">
                 <span> Масса </span>
-                <span> 500 г </span>
+                <span class="card__info-right"> 500 г </span>
               </div>
               <div class="card__info">
                 <span> Вкус </span>
-                <span> Рис </span>
+                <span class="card__info-right"> Рис </span>
               </div>
               <div class="card__info">
                 <span> Цена </span>
-                <span> 500 &#8381; </span>
+                <span class="card__info-right"> 500 &#8381; </span>
               </div>
             </div>
             <a class="card__button button-primary button button--long">
@@ -355,9 +357,11 @@
             </a>
           </li>
 
-          <li class="catalog-list__item card-show-more">
+          <li
+            class="catalog-list__item card card--show-more border-top main-container"
+          >
             <svg
-              class="card-show-more__image"
+              class="card__image card__image--show-more"
               xmlns="http://www.w3.org/2000/svg"
               width="30"
               height="30"
@@ -367,12 +371,14 @@
               <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="2" />
               <line x1="30" y1="15" y2="15" stroke="#D3D3D3" stroke-width="2" />
             </svg>
-            <p class="card-show-more__header">ПОКАЗАТЬ ЕЩЁ 100500 ТОВАРОВ</p>
-            <span class="card-show-more__info">
+            <p class="card__header card__header--show-more">
+              ПОКАЗАТЬ ЕЩЁ 100500 ТОВАРОВ
+            </p>
+            <span class="card__info">
               На самом деле вкусов гораздо больше!
             </span>
             <a
-              class="card-show-more__button button button--long button-secondary"
+              class="card__button card__button--show-more button button--long button-secondary"
             >
               ПОКАЗАТЬ ВСЕ
             </a>
@@ -381,55 +387,67 @@
       </section>
 
       <section class="other-products">
-        <h2 class="other-products__header subtitle">Дополнительные товары</h2>
-        <ul class="other-products__list">
-          <li class="other-products__item card-other-products">
-            <p class="card-other-products__header">САХАРОЗАМЕНИТЕЛЬ</p>
-            <div class="card-other-products__info">
+        <h2 class="other-products__header border-top subtitle">
+          <span class="subtitle__text subtitle__text--width"
+            >Дополнительные товары</span
+          >
+        </h2>
+        <ul class="other-products__list main-container">
+          <li class="card card--other-products border-top">
+            <p class="card__header card__header--other-products">
+              САХАРОЗАМЕНИТЕЛЬ
+            </p>
+            <div class="card__info card__info--other-products">
               <span> 1 упаковка (100г) </span>
-              <span> 200 &#8381; </span>
+              <span class="card__info-right"> 200 &#8381; </span>
             </div>
             <button
-              class="card-other-products__button button button--long button-primary"
+              class="card__button card__button--other-products button button--long button-primary"
+              type="button"
             >
               ЗАКАЗАТЬ
             </button>
           </li>
 
-          <li class="other-products__item card-other-products">
-            <p class="card-other-products__header">ПИТЬЕВАЯ ВОДА</p>
-            <div class="card-other-products__info">
+          <li class="card card--other-products border-top">
+            <p class="card__header card__header--other-products">
+              ПИТЬЕВАЯ ВОДА
+            </p>
+            <div class="card__info card__info--other-products">
               <span> 5 литров </span>
-              <span> 50 &#8381; </span>
+              <span class="card__info-right"> 50 &#8381; </span>
             </div>
             <button
-              class="card-other-products__button button button--long button-primary"
+              class="card__button card__button--other-products button button--long button-primary"
+              type="button"
             >
               ЗАКАЗАТЬ
             </button>
           </li>
 
-          <li class="other-products__item card-other-products">
-            <p class="card-other-products__header">МОЛОКО</p>
-            <div class="card-other-products__info">
+          <li class="card card--other-products border-top">
+            <p class="card__header card__header--other-products">МОЛОКО</p>
+            <div class="card__info card__info--other-products">
               <span> 1 литр </span>
-              <span> 100 &#8381; </span>
+              <span class="card__info-right"> 100 &#8381; </span>
             </div>
             <button
-              class="card-other-products__button button button--long button-primary"
+              class="card__button card__button--other-products button button--long button-primary"
+              type="button"
             >
               ЗАКАЗАТЬ
             </button>
           </li>
 
-          <li class="other-products__item card-other-products">
-            <p class="card-other-products__header">ВИТАМИНЫ</p>
-            <div class="card-other-products__info">
+          <li class="card card--other-products border-top">
+            <p class="card__header card__header--other-products">ВИТАМИНЫ</p>
+            <div class="card__info card__info--other-products">
               <span> 1 упаковка (30г) </span>
-              <span> 300 &#8381; </span>
+              <span class="card__info-right"> 300 &#8381; </span>
             </div>
             <button
-              class="card-other-products__button button button--long button-primary"
+              class="card__button card__button--other-products button button--long button-primary"
+              type="button"
             >
               ЗАКАЗАТЬ
             </button>
@@ -440,9 +458,10 @@
           <div class="promotion__bg-wrapper">
             <img
               class="promotion__bg-image"
-              src="./img/promotion-background.jpg"
-              width="280"
+              src="./img/promotion/background.jpg"
+              width="279"
               height="290"
+              alt="Чехол для кота"
             />
           </div>
           <svg
@@ -498,7 +517,7 @@
 
     <footer class="footer">
       <div class="map">
-        <div class="map__contacts map__contacts--bg contacts">
+        <div class="map__contacts map__contacts--bg contacts main-container">
           <p class="contacts__text">приглашаем к сотрудничеству дилеров</p>
           <p class="contacts__address">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
@@ -506,7 +525,7 @@
         </div>
       </div>
 
-      <div class="footer__social footer__social--bg-c social">
+      <div class="footer__social footer__social--bg-c social main-container">
         <svg
           class="social__font-logo font-logo"
           width="49%"

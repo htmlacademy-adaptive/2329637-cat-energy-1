@@ -1,21 +1,16 @@
-.main-content__programm {
-  margin: 0 auto;
+.main-content__program {
   margin-bottom: 20px;
   background-color: #f2f2f2;
   padding: 20px 24px;
-  width: 280px;
-  box-sizing: border-box;
 }
 
 .main-content__header {
-  margin: 0;
-  margin-bottom: 40px;
-  width: 280px;
+  margin: 0 0 40px;
+  word-break: break-word;
 }
 
 .main-content__description {
-  width: 280px;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }

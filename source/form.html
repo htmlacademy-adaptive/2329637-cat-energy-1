@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header header--border">
+    <header class="header">
       <div class="header__wrapper">
         <svg
           class="header__logo"
@@ -151,20 +151,18 @@
       </div>
     </header>
 
-    <main class="main-container">
+    <main>
+      <h1 class="form__header border-top page-header main-container">
+        Подбор программы
+      </h1>
+      <p class="form__header-slogan header-slogan main-container">
+        заполните анкету, и мы подберём программу питания для вашего кота
+      </p>
       <section class="form">
-        <h1 class="form__header page-header">Подбор программы</h1>
-        <p class="form__header-slogan header-slogan">
-          заполните анкету, и мы подберём программу питания для вашего кота
-        </p>
-
         <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="fieldset form__cat-info">
+          <fieldset class="fieldset form__cat-info main-container">
             <div class="fieldset__item">
-              <label
-                class="fieldset__label label label--uppercase"
-                for="cat-name"
-              >
+              <label class="label label--uppercase" for="cat-name">
                 ИМЯ:*
               </label>
               <input
@@ -178,10 +176,7 @@
             </div>
 
             <div class="fieldset__item">
-              <label
-                class="fieldset__label label label--uppercase"
-                for="cat-mass"
-              >
+              <label class="label label--uppercase" for="cat-mass">
                 ВЕС (КГ):*</label
               >
               <input
@@ -195,10 +190,7 @@
             </div>
 
             <div class="fieldset__item">
-              <label
-                class="fieldset__label label label--uppercase"
-                for="cat-age"
-              >
+              <label class="label label--uppercase" for="cat-age">
                 ВОЗРАСТ (ЛЕТ):</label
               >
               <input
@@ -211,179 +203,203 @@
             </div>
           </fieldset>
 
-          <fieldset class="fieldset form__radio-buttons">
-            <label class="fieldset__label label label--uppercase">
-              <input
-                class="custom-radio-button"
-                type="radio"
-                name="programm"
-                value="slim"
-                checked
-              />
-              <span class="custom-radio-checkmark"></span>
-              похудение
+          <fieldset class="fieldset form__radio-buttons main-container">
+            <label class="label label--uppercase">
+              <span class="custom-radio">
+                <input
+                  class="custom-radio__button"
+                  type="radio"
+                  name="program"
+                  value="slim"
+                  checked
+                />
+                <span class="custom-radio__checkmark"></span>
+                похудение
+              </span>
             </label>
 
-            <label class="fieldset__label label label--uppercase">
-              <input
-                class="custom-radio-button"
-                type="radio"
-                name="programm"
-                value="pro"
-              />
-              <span class="custom-radio-checkmark"></span>
-              набор массы
+            <label class="label label--uppercase">
+              <span class="custom-radio">
+                <input
+                  class="custom-radio__button"
+                  type="radio"
+                  name="program"
+                  value="pro"
+                />
+                <span class="custom-radio__checkmark"></span>
+                набор массы
+              </span>
             </label>
 
-            <label class="fieldset__label label label--uppercase">
-              <input
-                class="custom-radio-button"
-                type="radio"
-                name="programm"
-                value="dont-know"
-              />
-              <span class="custom-radio-checkmark"></span>
-              не знаю (нужен ваш совет)
+            <label class="label label--uppercase">
+              <span class="custom-radio">
+                <input
+                  class="custom-radio__button"
+                  type="radio"
+                  name="program"
+                  value="dont-know"
+                />
+                <span class="custom-radio__checkmark"></span>
+                не знаю (нужен ваш совет)
+              </span>
             </label>
           </fieldset>
 
           <fieldset class="fieldset form__user-contacts">
             <legend class="fieldset__legend subtitle">
-              Контактные данные <br />
-              (владельца кота)
+              <span class="subtitle__text"
+                >Контактные данные (владельца кота)
+              </span>
             </legend>
 
-            <div class="fieldset__item">
-              <label class="fieldset__label label label--uppercase" for="email">
-                e-mail:*</label
-              >
-              <input
-                class="fieldset__input"
-                type="email"
-                placeholder="BARSIK@GMAIL.COM"
-                name="e-mail"
-                required
-                id="email"
-              />
-              <svg
-                class="fieldset__icon"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="email-stroke 1">
-                  <path
-                    id="Vector"
-                    d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-              </svg>
-            </div>
+            <div class="main-container">
+              <div class="fieldset__item">
+                <label class="label label--uppercase" for="email">
+                  e-mail:*</label
+                >
+                <input
+                  class="fieldset__input"
+                  type="email"
+                  placeholder="BARSIK@GMAIL.COM"
+                  name="e-mail"
+                  required
+                  id="email"
+                />
+                <svg
+                  class="fieldset__icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="email-stroke 1">
+                    <path
+                      id="Vector"
+                      d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </div>
 
-            <div class="fieldset__item">
-              <label class="fieldset__label label label--uppercase" for="phone">
-                телефон:*</label
-              >
-              <input
-                class="fieldset__input"
-                type="tel"
-                pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                placeholder="8-800-555-35-35"
-                name="phone"
-                required
-                id="phone"
-              />
-              <svg
-                class="fieldset__icon"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g id="phone-stroke 1">
-                  <path
-                    id="Vector"
-                    d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-              </svg>
+              <div class="fieldset__item">
+                <label class="label label--uppercase" for="phone">
+                  телефон:*</label
+                >
+                <input
+                  class="fieldset__input"
+                  type="tel"
+                  pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                  placeholder="8-800-555-35-35"
+                  name="phone"
+                  required
+                  id="phone"
+                />
+                <svg
+                  class="fieldset__icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="phone-stroke 1">
+                    <path
+                      id="Vector"
+                      d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z"
+                      stroke="black"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="fieldset form__comments">
-            <legend class="fieldset__legend subtitle">Комментарий</legend>
+            <legend class="fieldset__legend subtitle">
+              <span class="subtitle__text">Комментарий</span>
+            </legend>
 
-            <label class="fieldset__label label label--uppercase">
+            <label class="label label--uppercase main-container">
               <textarea
                 class="fieldset__textarea"
                 name="comment"
                 cols="50"
-                rows="8"
+                rows="5"
                 placeholder="РАССКАЖИТЕ О ВСЕХ ПОВАДКАХ КОТА"
               ></textarea>
             </label>
           </fieldset>
 
           <fieldset class="fieldset form__other-products">
-            <legend class="fieldset__legend subtitle">Дополнительно</legend>
+            <legend class="fieldset__legend subtitle">
+              <span class="subtitle__text">Дополнительно</span>
+            </legend>
+            <div class="main-container">
+              <label class="label label--uppercase">
+                <span class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__button"
+                    type="checkbox"
+                    name="sweetener"
+                    checked
+                  />
+                  <span class="custom-checkbox__mark"></span>
+                  Сахарозаменитель
+                </span>
+              </label>
 
-            <label class="fieldset__label label label--uppercase">
-              <input
-                class="custom-checkbox-button"
-                type="checkbox"
-                name="sweetener"
-                checked
-              />
-              <span class="custom-checkbox-mark"></span>
-              Сахарозаменитель
-            </label>
+              <label class="label label--uppercase">
+                <span class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__button"
+                    type="checkbox"
+                    name="drinking-water"
+                  />
+                  <span class="custom-checkbox__mark"></span>
+                  Питьевая вода
+                </span>
+              </label>
 
-            <label class="fieldset__label label label--uppercase">
-              <input
-                class="custom-checkbox-button"
-                type="checkbox"
-                name="drinking-wather"
-              />
-              <span class="custom-checkbox-mark"></span>
-              Питьевая вода
-            </label>
+              <label class="label label--uppercase">
+                <span class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__button"
+                    type="checkbox"
+                    name="milk"
+                  />
+                  <span class="custom-checkbox__mark"></span>
+                  Молоко
+                </span>
+              </label>
 
-            <label class="fieldset__label label label--uppercase">
-              <input
-                class="custom-checkbox-button"
-                type="checkbox"
-                name="milk"
-              />
-              <span class="custom-checkbox-mark"></span>
-              Молоко
-            </label>
-
-            <label class="fieldset__label label label--uppercase">
-              <input
-                class="custom-checkbox-button"
-                type="checkbox"
-                name="vitamins"
-              />
-              <span class="custom-checkbox-mark"></span>
-              Витамины
-            </label>
+              <label class="label label--uppercase">
+                <span class="custom-checkbox">
+                  <input
+                    class="custom-checkbox__button"
+                    type="checkbox"
+                    name="vitamins"
+                  />
+                  <span class="custom-checkbox__mark"></span>
+                  Витамины
+                </span>
+              </label>
+            </div>
           </fieldset>
 
-          <button
-            class="form__button button-primary button button--long"
-            type="submit"
-          >
-            отправить заявку
-          </button>
+          <div class="main-container">
+            <button
+              class="form__button button-primary button button--long"
+              type="submit"
+            >
+              отправить заявку
+            </button>
+          </div>
 
           <p class="form__note">* — Обязательные поля</p>
         </form>
@@ -392,7 +408,7 @@
 
     <footer class="footer">
       <div class="map">
-        <div class="map__contacts map__contacts--bg contacts">
+        <div class="map__contacts map__contacts--bg contacts main-container">
           <p class="contacts__text">приглашаем к сотрудничеству дилеров</p>
           <p class="contacts__address">
             ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
@@ -400,7 +416,7 @@
         </div>
       </div>
 
-      <div class="footer__social footer__social--bg-c social">
+      <div class="footer__social footer__social--bg-c social main-container">
         <svg
           class="social__font-logo font-logo"
           width="49%"
