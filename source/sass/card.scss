@@ -6,14 +6,13 @@
 .card--show-more {
   flex-direction: column;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .card--other-products {
   flex-direction: column;
   padding-top: 12px;
   padding-bottom: 19px;
-
 }
 
 .card__image-wrapper {
@@ -27,7 +26,7 @@
   object-fit: cover;
 }
 
-.card__image--show-more  {
+.card__image--show-more {
   margin-bottom: 23px;
 }
 
