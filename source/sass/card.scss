@@ -15,6 +15,10 @@
   padding-bottom: 19px;
 }
 
+.card--other-products:last-child {
+  border-bottom: 2px solid #d9d9d9;
+}
+
 .card__image-wrapper {
   display: flex;
   justify-content: center;
