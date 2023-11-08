@@ -52,7 +52,7 @@
 .card__header--show-more {
   width: fit-content;
   text-align: center;
-  margin: 0 0 8px;
+  margin: 0 auto 8px;
 }
 
 .card__header--other-products {
@@ -68,6 +68,10 @@
   text-align: center;
   word-break: break-word;
   gap: 15px;
+}
+
+.card__info--show-more {
+  justify-content: center;
 }
 
 .card__info-right {
