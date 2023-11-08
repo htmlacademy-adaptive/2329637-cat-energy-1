@@ -2,5 +2,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.header__logo {
+  margin-right: 5px;
+}
+
+.header__logo2 {
+  display: none;
+}
+
+.header__logo3 {
+  display: none;
+}
+
+
+.header__navigation {
+  margin-left: 5px;
 }

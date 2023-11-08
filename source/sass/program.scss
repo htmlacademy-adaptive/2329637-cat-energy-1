@@ -1,8 +1,18 @@
 .program {
   position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px 20px;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "image heading"
+    "text text"
+    "link link";
 }
 
 .program__heading {
+  grid-area: heading;
   position: relative;
   display: inline-block;
   margin: 0;
@@ -13,17 +23,11 @@
   word-break: break-word;
 }
 
-.program__wrapper {
-  display: flex;
-  align-items: center;
-  margin-bottom: 22px;
-}
-
 .program__image-wrapper {
+  grid-area: image;
   position: relative;
-  display: inline-block;
+  display: grid;
   background-color: #68b738;
-  margin-right: 20px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -38,7 +42,8 @@
 }
 
 .program__text {
-  margin: 0 0 15px;
+  grid-area: text;
+  margin: 0;
   padding-bottom: 23px;
 
   color: #444444;
@@ -58,4 +63,7 @@
 
 .program__link-wrapper::after {
   content: url("../img/program/icon-arrow.svg");
+}
+.program__link-wrapper {
+  grid-area: link;
 }

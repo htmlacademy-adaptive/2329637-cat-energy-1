@@ -1,10 +1,25 @@
 .partners {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
 }
 
 .partners__link {
   text-decoration: none;
   color: #444444;
+  word-break: break-word;
+}
+
+.partners__logo {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.partners__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 23px;
+  width: 100%;
 }

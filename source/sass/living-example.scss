@@ -24,9 +24,13 @@
   color: #444444;
 }
 
+.living-example__wrapper {
+  background-color: inherit;
+}
+
 .living-example__results-wrapper {
-  width: 100%;
   display: flex;
+  background-color: inherit;
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
@@ -41,3 +45,4 @@
   font-weight: 700;
   text-align: center;
 }
+

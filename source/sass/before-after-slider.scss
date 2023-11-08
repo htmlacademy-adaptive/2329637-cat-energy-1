@@ -1,14 +1,17 @@
 .before-after-slider {
-  display: flex;
-  justify-content: center;
   position: relative;
   overflow: hidden;
   --position: 50%;
+  background-color: inherit;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
 }
 
 .before-after-slider__image-container {
-  max-width: 800px;
-  max-height: 90vh;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
 }
 
 .before-after-slider__image {
@@ -16,7 +19,7 @@
   height: 100%;
   object-fit: cover;
   object-position: left;
-  background-color: #eaeaea;
+  background-color: inherit;
 }
 
 .before-after-slider__image-before {

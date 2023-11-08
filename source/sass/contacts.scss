@@ -1,5 +1,6 @@
 .contacts {
   display: flex;
+  justify-content: space-between;
 }
 
 .contacts__text {
@@ -10,11 +11,11 @@
   line-height: 20px;
   font-weight: 700;
   word-break: break-word;
-  width: 50%;
+  width: 140px;
 }
 
 .contacts__address {
   margin: 0;
   word-break: break-word;
-  width: 50%;
+  width: 140px;
 }
