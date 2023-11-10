@@ -1,9 +1,38 @@
+@import "lib/mixins";
+@import "lib/vars";
+@import "lib/colors";
+
 .navigation {
   display: inline-block;
 }
 
 .navigation__wrapper {
   display: none;
+}
+
+.navigation__link {
+  @include tablet-min-width {
+    padding: 14px 10px 12px;
+    text-decoration: none;
+    color: $color-black;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Oswald", sans-serif;
+
+    &--current {
+      border-bottom: 2px solid $color-green;
+    }
+  }
+
+  @include desktop-min-width {
+    font-size: 20px;
+    line-height: normal;
+
+    &--color {
+      color: $color-white;
+      border-color: $color-white;
+    }
+  }
 }
 
 .navigation__wrapper--modal-open {

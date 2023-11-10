@@ -1,7 +1,10 @@
+@import "lib/mixins";
+@import "lib/vars";
+@import "lib/colors";
+
 .fieldset {
   display: flex;
   flex-direction: column;
-  gap: 14px;
 }
 
 .fieldset__item {
@@ -9,6 +12,10 @@
   align-items: center;
   position: relative;
   gap: 13px;
+
+  @include desktop-min-width {
+    grid-column: span 2;
+  }
 }
 
 .fieldset__input {
@@ -18,9 +25,14 @@
 
   font-size: 16px;
   line-height: 19px;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $color-special-gray;
   font-family: "Oswald", sans-serif;
-  color: #444444;
+  color: $color-black--dark;
+
+  @include tablet-min-width {
+    padding: 10px 15px;
+    font-size: 20px;
+  }
 }
 
 .fieldset__textarea {
@@ -32,7 +44,12 @@
 
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $color-special-gray;
+
+  @include tablet-min-width {
+    min-height: 175px;
+    font-size: 20px;
+  }
 }
 
 .fieldset__icon {

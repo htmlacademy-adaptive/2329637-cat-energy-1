@@ -1,22 +1,58 @@
+@import "lib/mixins";
+@import "lib/vars";
+@import "lib/colors";
+
 .card {
   display: flex;
   flex-wrap: wrap;
-}
 
-.card--show-more {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  &--show-more {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.card--other-products {
-  flex-direction: column;
-  padding-top: 12px;
-  padding-bottom: 19px;
-}
+  &--other-products {
+    flex-direction: column;
+    padding-top: 12px;
+    padding-bottom: 19px;
+  }
 
-.card--other-products:last-child {
-  border-bottom: 1px solid #cdcdcd;
+  &--other-products:last-child {
+    border-bottom: 1px solid $color-special-gray;
+  }
+
+  @include tablet-min-width {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 37px 40px;
+    box-sizing: border-box;
+    background-color: $color-gray--light;
+
+    &--other-products {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid $color-special-gray;
+      border-bottom: none;
+      background-color: unset;
+    }
+
+    &--show-more {
+      background-color: inherit;
+      border: 1px solid $color-gray--light;
+    }
+  }
+
+  @include desktop-min-width {
+    &--other-products {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 15px 0 17px;
+      gap: 80px;
+    }
+  }
 }
 
 .card__image-wrapper {
@@ -24,18 +60,42 @@
   justify-content: center;
   align-items: center;
   width: 50%;
+
+  @include tablet-min-width {
+    position: absolute;
+    top: -81px;
+    margin-bottom: auto;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 210px;
+    padding: 19px;
+    box-sizing: border-box;
+  }
 }
 
 .card__image {
   object-fit: cover;
-}
 
-.card__image--show-more {
-  margin-bottom: 23px;
+  &--show-more {
+    margin-bottom: 23px;
+  }
+
+  @include tablet-min-width {
+    &--show-more {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .card__content {
   width: 50%;
+
+  @include tablet-min-width {
+    width: 100%;
+  }
 }
 
 .card__header {
@@ -47,17 +107,35 @@
   font-size: 16px;
   line-height: 20px;
   word-break: break-word;
-}
 
-.card__header--show-more {
-  width: fit-content;
-  text-align: center;
-  margin: 0 auto 8px;
-}
+  &--show-more {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 8px;
+  }
 
-.card__header--other-products {
-  width: 100%;
-  margin-bottom: 13px;
+  &--other-products {
+    width: 100%;
+    margin-bottom: 13px;
+  }
+
+  @include tablet-min-width {
+    width: 135px;
+    margin: 0 auto 14px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+
+    &--show-more {
+      margin-bottom: 23px;
+    }
+
+    &--other-products {
+      display: flex;
+      width: 100%;
+      margin: 0;
+    }
+  }
 }
 
 .card__info {
@@ -68,10 +146,38 @@
   text-align: center;
   word-break: break-word;
   gap: 15px;
-}
 
-.card__info--show-more {
-  justify-content: center;
+  &--other-products {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  &--show-more {
+    justify-content: center;
+  }
+
+  @include tablet-min-width {
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $color-special-gray;
+
+    &:not(:first-of-type) {
+      margin-top: 5px;
+    }
+
+    &--show-more {
+      width: 170px;
+      margin: 0 auto;
+      border: none;
+    }
+
+    &--other-products {
+      border: none;
+      padding: 0;
+    }
+  }
 }
 
 .card__info-right {
@@ -80,19 +186,30 @@
   align-items: center;
 }
 
-.card__info--other-products {
-  font-size: 14px;
-  line-height: 14px;
-}
-
 .card__button {
   margin-top: 17px;
-}
 
-.card__button--other-products {
-  margin-top: 15px;
-}
+  &--other-products {
+    margin-top: 15px;
+  }
 
-.card__button--show-more {
-  margin-top: 21px;
+  &--show-more {
+    margin-top: 21px;
+  }
+
+  @include tablet-min-width {
+    margin-top: 32px;
+
+    &--other-products {
+      margin-top: 25px;
+      grid-column: 1/-1;
+    }
+  }
+
+  @include desktop-min-width {
+    &--other-products {
+      grid-column: 3 / 4;
+      margin-top: 0;
+    }
+  }
 }

@@ -1,11 +1,34 @@
+@import "lib/mixins";
+@import "lib/vars";
+@import "lib/colors";
+
 .social {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 23px;
+
+  @include tablet-min-width {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+  }
+}
+
+.social__logo-wrapper {
+  @include tablet-min-width {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 33%;
+  }
 }
 
 .social__font-logo {
   flex-shrink: 0;
   width: 100%;
+
+  @include tablet-min-width {
+    width: auto;
+  }
 }

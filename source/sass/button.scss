@@ -1,3 +1,7 @@
+@import "lib/mixins";
+@import "lib/vars";
+@import "lib/colors";
+
 .button {
   display: inline-flex;
   justify-content: center;
@@ -12,8 +16,8 @@
   border: none;
   cursor: pointer;
   word-break: break-word;
-}
 
-.button--long {
-  width: 100%;
+  &--long {
+    width: 100%;
+  }
 }

@@ -1,3 +1,7 @@
+@import "lib/mixins";
+@import "lib/vars";
+@import "lib/colors";
+
 .program {
   position: relative;
   display: grid;
@@ -9,6 +13,28 @@
     "image heading"
     "text text"
     "link link";
+
+  @include tablet-min-width {
+    position: relative;
+    display: grid;
+    align-items: start;
+    gap: 24px 60px;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "heading image"
+      "text image"
+      "link image";
+  }
+
+  @include desktop-min-width {
+    gap: 27px 62px;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "image heading"
+      "text text"
+      "link link";
+  }
 }
 
 .program__heading {
@@ -21,17 +47,32 @@
   font-size: 24px;
   line-height: 37px;
   word-break: break-word;
+
+  @include tablet-min-width {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .program__image-wrapper {
   grid-area: image;
   position: relative;
   display: grid;
-  background-color: #68b738;
+  background-color: $color-green;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   flex-shrink: 0;
+
+  @include tablet-min-width {
+    width: 200px;
+    height: 200px;
+  }
+
+  @include desktop-min-width {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .program__image {
@@ -39,6 +80,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
 }
 
 .program__text {
@@ -46,9 +89,22 @@
   margin: 0;
   padding-bottom: 23px;
 
-  color: #444444;
-  border-bottom: 2px solid #d9d9d9;
+  color: $color-black--dark;
+  border-bottom: 2px solid $color-gray--dark;
   word-break: break-word;
+
+  @include tablet-min-width {
+    border-bottom: none;
+    padding-bottom: 0;
+    max-width: 600px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include desktop-min-width {
+    padding-top: 12px;
+  }
 }
 
 .program__link {
@@ -58,13 +114,21 @@
   font-weight: 700;
   font-size: 16px;
   text-decoration: none;
-  color: #000000;
-}
+  color: $color-black;
 
-.program__link-wrapper::after {
-  content: url("../img/program/icon-arrow.svg");
+  @include tablet-min-width {
+    font-size: 20px;
+  }
 }
 
 .program__link-wrapper {
   grid-area: link;
+
+  &::after {
+    content: url("../img/program/icon-arrow.svg");
+  }
+
+  @include tablet-min-width {
+    margin-top: 28px;
+  }
 }

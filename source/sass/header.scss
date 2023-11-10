@@ -1,24 +1,94 @@
+@import "lib/mixins";
+@import "lib/vars";
+@import "lib/colors";
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 14px;
   padding-bottom: 14px;
+
+  @include tablet-min-width {
+    padding-top: 25px;
+    justify-content: flex-start;
+  }
+
+  @include desktop-min-width {
+    padding-top: 55px;
+  }
 }
 
 .header__logo {
   margin-right: 5px;
+
+  @include tablet-min-width {
+    display: none;
+  }
 }
 
 .header__logo2 {
   display: none;
+
+  @include tablet-min-width {
+    display: block;
+    margin-right: 13px;
+    flex-shrink: 0;
+  }
+
+  @include desktop-min-width {
+    display: none;
+  }
 }
 
 .header__logo3 {
   display: none;
+
+  @include desktop-min-width {
+    display: block;
+    margin-right: 14px;
+  }
 }
 
+.header__navigation-wrapper {
+  @include tablet-min-width {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+}
 
 .header__navigation {
   margin-left: 5px;
+
+  @include tablet-min-width {
+    flex-grow: 1;
+  }
+}
+
+.header__font-logo {
+  @include tablet-min-width {
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+}
+
+.header__burger-menu {
+  @include tablet-min-width {
+    display: none;
+  }
+}
+
+.header__navigation-list {
+  @include tablet-min-width {
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 10px 33px;
+  }
 }

@@ -1,6 +1,16 @@
+@import "lib/mixins";
+@import "lib/vars";
+@import "lib/colors";
+
 .contacts {
   display: flex;
   justify-content: space-between;
+
+  @include tablet-min-width {
+    justify-content: space-between;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
 }
 
 .contacts__text {
@@ -12,10 +22,32 @@
   font-weight: 700;
   word-break: break-word;
   width: 140px;
+
+  @include tablet-min-width {
+    max-width: 159px;
+    font-size: 20px;
+    line-height: 26px;
+    width: 50%;
+  }
 }
 
 .contacts__address {
   margin: 0;
   word-break: break-word;
   width: 140px;
+
+  @include tablet-min-width {
+    max-width: 180px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    text-align-last: right;
+    width: 50%;
+  }
+}
+
+.contacts__town {
+  @include tablet-min-width {
+    line-height: 50px;
+  }
 }

@@ -1,23 +1,75 @@
+@import "lib/mixins";
+@import "lib/vars";
+@import "lib/colors";
+
 .description-item {
   display: flex;
   align-items: center;
   gap: 20px;
+
+  @include tablet-min-width {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 31px;
+    min-height: 280px;
+
+    &::after {
+      position: absolute;
+      display: flex;
+      align-items: baseline;
+      font-size: 280px;
+      font-family: "Oswald", sans-serif;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      color: $color-gray--light;
+    }
+
+    &--first::after {
+      content: "1";
+    }
+
+    &--second::after {
+      content: "2";
+    }
+
+    &--third::after {
+      content: "3";
+    }
+
+    &--fourth::after {
+      content: "4";
+    }
+  }
 }
 
 .description-item__icon {
-  background-color: #68b738;
+  background-color: $color-green;
   box-sizing: border-box;
   width: 60px;
   height: 60px;
   padding: 15px;
   flex-shrink: 0;
+
+  @include tablet-min-width {
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .description-item__text {
   word-break: break-word;
   margin: 0;
-}
 
-.description-item__text--color {
-  color: #444444;
+  &--color {
+    color: $color-black--dark;
+  }
+
+  @include tablet-min-width {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

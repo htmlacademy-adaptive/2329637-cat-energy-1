@@ -1,0 +1,13 @@
+@import "vars";
+
+@mixin tablet-min-width {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop-min-width {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
