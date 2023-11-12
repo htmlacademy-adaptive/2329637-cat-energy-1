@@ -1,14 +1,40 @@
+@import "lib";
+
 .catalog-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-direction: column;
+
+  @include tablet-min-width {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 141px 60px;
+    margin-bottom: 70px;
+    padding: 0 30px;
+  }
+
+  @include desktop-min-width {
+    gap: 80px;
+    padding: 0 110px;
+  }
 }
 
 .catalog-list__item {
   padding-top: 20px;
   padding-bottom: 25px;
+
+  @include tablet-min-width {
+    min-height: 430px;
+    grid-column: span 2;
+  }
+
+  @include desktop-min-width {
+    grid-column: span 1;
+  }
 }
 
 .catalog-list__item:last-child {

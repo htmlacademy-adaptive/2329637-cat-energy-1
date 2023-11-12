@@ -1,30 +1,49 @@
+@import "lib";
+
 .hero {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 480px;
+
+  @include desktop-min-width {
+    min-height: 566px;
+    margin-bottom: 62px;
+  }
 }
 
 .hero__background-wrapper {
   position: absolute;
-  background-color: #68b738;
+  background-color: $color-green;
   left: 0;
   right: 0;
   top: 0;
   bottom: 195px;
   object-fit: cover;
   z-index: -1;
-}
 
-.hero__background-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(105, 183, 56, 0.85);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    background-color: $color-green;
+  }
+
+  @include tablet-min-width {
+    display: none;
+  }
+
+  @include desktop-min-width {
+    display: flex;
+    left: unset;
+    top: -147px;
+    height: 694px;
+  }
 }
 
 .hero__background-photo {
@@ -38,22 +57,84 @@
   margin: 0 0 25px;
   padding-top: 27px;
   text-align: center;
-}
+  max-width: 320px;
 
-.hero__header--color {
-  color: #ffffff;
+  &--color {
+    color: $color-white;
+  }
+
+  @include tablet-min-width {
+    max-width: 420px;
+    align-self: flex-start;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    padding-top: 51px;
+
+    line-height: 60px;
+    text-align: left;
+    color: $color-black;
+  }
+
+  @include desktop-min-width {
+    padding-top: 96px;
+  }
 }
 
 .hero__header-slogan {
-  margin: 0 auto 29px;
+  margin: 0 0 29px;
   text-align: center;
-}
 
-.hero__header-slogan--color {
-  color: #ffffff;
+  &--color {
+    color: $color-white;
+  }
+
+  @include tablet-min-width {
+    align-self: flex-start;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    text-align: left;
+  }
+
+  @include desktop-min-width {
+    margin-bottom: 0;
+  }
 }
 
 .hero__button {
   margin-top: auto;
   margin-bottom: 20px;
+
+  @include tablet-min-width {
+    align-self: flex-start;
+    font-size: 20px;
+    line-height: 26px;
+    order: 3;
+    max-width: 244px;
+    margin-bottom: 0;
+    margin-left: 60px;
+    padding: 14px 40px;
+  }
+
+  @include desktop-min-width {
+    margin-top: 52px;
+  }
+}
+
+.hero__image {
+  @include tablet-min-width {
+    position: relative;
+    top: -83px;
+    display: block;
+    align-self: flex-start;
+    z-index: -1;
+    order: 4;
+    width: 709px;
+  }
+
+  @include desktop-min-width {
+    position: absolute;
+    width: 552px;
+    right: 320px;
+    top: 10px;
+  }
 }

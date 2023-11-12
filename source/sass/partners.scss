@@ -1,10 +1,42 @@
+@import "lib";
+
 .partners {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+
+  @include tablet-min-width {
+    width: auto;
+    max-width: 33%;
+    gap: 23px;
+  }
 }
 
 .partners__link {
   text-decoration: none;
-  color: #444444;
+  color: $color-black-dark;
+  word-break: break-word;
+
+  @include tablet-min-width {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.partners__logo {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.partners__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 23px;
+  width: 100%;
+
+  @include tablet-min-width {
+    justify-content: flex-end;
+  }
 }

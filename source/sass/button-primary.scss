@@ -1,4 +1,6 @@
+@import "lib";
+
 .button-primary {
-  background-color: #68b738;
-  color: #ffffff;
+  background-color: $color-green;
+  color: $color-white;
 }

@@ -1,8 +1,10 @@
+@import "lib";
+
 .map__contacts {
   padding-top: 26px;
   padding-bottom: 26px;
 }
 
 .map__contacts--bg {
-  background-color: #f2f2f2;
+  background-color: $color-gray-light;
 }

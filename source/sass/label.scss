@@ -1,9 +1,15 @@
+@import "lib";
+
 .label {
   font-family: "Oswald", sans-serif;
-  color: #444444;
+  color: $color-black-dark;
   line-height: 18px;
   font-size: 16px;
   cursor: pointer;
+
+  @include tablet-min-width {
+    font-size: 20px;
+  }
 }
 
 .label--uppercase {

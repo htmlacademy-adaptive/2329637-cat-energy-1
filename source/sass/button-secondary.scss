@@ -1,4 +1,6 @@
+@import "lib";
+
 .button-secondary {
-  background-color: #f2f2f2;
-  color: #444444;
+  background-color: $color-gray-light;
+  color: $color-black-dark;
 }

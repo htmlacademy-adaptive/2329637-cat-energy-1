@@ -1,31 +1,62 @@
+@import "lib";
+
 .description-item {
   display: flex;
   align-items: center;
   gap: 20px;
+
+  @include tablet-min-width {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 31px;
+    min-height: 280px;
+  }
 }
 
-.description-item:not(:last-child) {
-  margin-bottom: 20px;
-}
+.description-item__number {
+  display: none;
 
-.description-item:last-child {
-  padding-bottom: 49px;
+  @include tablet-min-width {
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", sans-serif;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    color: $color-gray-light;
+  }
 }
 
 .description-item__icon {
-  background-color: #68b738;
+  background-color: $color-green;
   box-sizing: border-box;
   width: 60px;
   height: 60px;
   padding: 15px;
   flex-shrink: 0;
+
+  @include tablet-min-width {
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .description-item__text {
   word-break: break-word;
   margin: 0;
-}
 
-.description-item__text--color {
-  color: #444444;
+  &--color {
+    color: $color-black-dark;
+  }
+
+  @include tablet-min-width {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

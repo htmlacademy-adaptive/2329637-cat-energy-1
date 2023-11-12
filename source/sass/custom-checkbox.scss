@@ -1,7 +1,14 @@
+@import "lib";
+
 .custom-checkbox {
   display: flex;
   align-items: center;
   word-break: break-word;
+  gap: 15px;
+
+  @include tablet-min-width {
+    gap: 20px;
+  }
 }
 
 .custom-checkbox__button {
@@ -13,22 +20,21 @@
 
 .custom-checkbox__mark {
   position: relative;
-  margin-right: 15px;
   width: 30px;
   height: 30px;
   flex-shrink: 0;
-  background-color: #ffffff;
+  background-color: $color-white;
   box-sizing: border-box;
-  border: 1px solid #cdcdcd;
-}
+  border: 1px solid $color-special-gray;
 
-.custom-checkbox__mark::after {
-  content: url("../img/form/checkbox-mark.svg");
-  position: absolute;
-  display: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  &::after {
+    content: url("../img/form/checkbox-mark.svg");
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .custom-checkbox__button:checked ~ .custom-checkbox__mark::after {

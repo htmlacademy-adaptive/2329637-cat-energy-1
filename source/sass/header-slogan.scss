@@ -1,7 +1,16 @@
+@import "lib";
+
 .header-slogan {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
   word-break: break-word;
+
+  @include tablet-min-width {
+    max-width: 300px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-black;
+  }
 }

@@ -1,14 +1,19 @@
+@import "lib";
+
 .before-after-slider {
-  display: flex;
-  justify-content: center;
   position: relative;
   overflow: hidden;
   --position: 50%;
+  background-color: inherit;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
 
 .before-after-slider__image-container {
-  max-width: 800px;
-  max-height: 90vh;
+  width: 100%;
+  height: auto;
+  background-color: inherit;
 }
 
 .before-after-slider__image {
@@ -16,13 +21,17 @@
   height: 100%;
   object-fit: cover;
   object-position: left;
-  background-color: #eaeaea;
+  background-color: inherit;
 }
 
 .before-after-slider__image-before {
   position: absolute;
   inset: 0;
-  width: var(--position);
+  clip-path: polygon(0 0, var(--position) 0, var(--position) 100%, 0 100%);
+}
+
+.before-after-slider__image-after {
+  clip-path: polygon(var(--position) 0, 100% 0, 100% 100%, var(--position) 100%);
 }
 
 .before-after-slider__slider {
@@ -37,7 +46,7 @@
 }
 
 .before-after-slider__slider:focus-visible ~ .before-after-slider__slider-button {
-  outline: 5px solid #000000;
+  outline: 5px solid $color-black;
   outline-offset: 3px;
 }
 
@@ -47,7 +56,7 @@
   width: 2px;
   border-radius: 5px;
   height: 100%;
-  background-color: #666666;
+  background-color: $color-black-light;
   left: var(--position);
   transform: translateX(-50%);
   pointer-events: none;

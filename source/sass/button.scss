@@ -1,3 +1,5 @@
+@import "lib";
+
 .button {
   display: inline-flex;
   justify-content: center;
@@ -12,8 +14,8 @@
   border: none;
   cursor: pointer;
   word-break: break-word;
-}
 
-.button--long {
-  width: 100%;
+  &--long {
+    width: 100%;
+  }
 }

@@ -1,3 +1,21 @@
+@import "lib";
+
 .border-top {
-  border-top: 2px solid #d9d9d9;
+  border-top: 1px solid $color-special-gray;
+
+  @include tablet-min-width {
+    border: none;
+
+    &--other-products {
+      border: 1px solid $color-special-gray;
+      border-bottom: 0;
+    }
+  }
+
+  @include desktop-min-width {
+    &--other-products {
+      border-left: none;
+      border-right: none;
+    }
+  }
 }
