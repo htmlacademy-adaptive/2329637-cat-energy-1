@@ -1,6 +1,4 @@
-@import "lib/mixins";
-@import "lib/vars";
-@import "lib/colors";
+@import "lib";
 
 .form {
   position: relative;
@@ -60,7 +58,7 @@
   gap: 13px;
 
   @include tablet-min-width {
-    border: 1px solid $color-gray--dark;
+    border: 1px solid $color-gray-dark;
     padding: 23px 27px 27px;
   }
 }
@@ -70,8 +68,8 @@
   padding-top: 22px;
   padding-bottom: 19px;
   border: none;
-  border-bottom: 1px solid $color-gray--dark;
-  border-top: 1px solid $color-gray--dark;
+  border-bottom: 1px solid $color-gray-dark;
+  border-top: 1px solid $color-gray-dark;
 
   @include tablet-min-width {
     padding-top: 0;

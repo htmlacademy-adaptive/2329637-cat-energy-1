@@ -1,6 +1,4 @@
-@import "lib/mixins";
-@import "lib/vars";
-@import "lib/colors";
+@import "lib";
 
 .living-example {
   display: flex;
@@ -16,7 +14,7 @@
 
   @include tablet-min-width {
     padding-top: 45px;
-    border-top: 1px solid $color-gray--dark;
+    border-top: 1px solid $color-gray-dark;
 
     &--bg-c {
       background-color: unset;
@@ -56,7 +54,7 @@
   word-break: break-word;
 
   &--color {
-    color: $color-black--dark;
+    color: $color-black-dark;
   }
 
   @include tablet-min-width {

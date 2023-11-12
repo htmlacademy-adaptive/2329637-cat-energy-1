@@ -1,6 +1,4 @@
-@import "lib/mixins";
-@import "lib/vars";
-@import "lib/colors";
+@import "lib";
 
 .program {
   position: relative;
@@ -89,8 +87,8 @@
   margin: 0;
   padding-bottom: 23px;
 
-  color: $color-black--dark;
-  border-bottom: 2px solid $color-gray--dark;
+  color: $color-black-dark;
+  border-bottom: 2px solid $color-gray-dark;
   word-break: break-word;
 
   @include tablet-min-width {

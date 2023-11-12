@@ -1,6 +1,4 @@
-@import "lib/mixins";
-@import "lib/vars";
-@import "lib/colors";
+@import "lib";
 
 .description-item {
   display: flex;
@@ -14,34 +12,23 @@
     align-items: flex-start;
     gap: 31px;
     min-height: 280px;
+  }
+}
 
-    &::after {
-      position: absolute;
-      display: flex;
-      align-items: baseline;
-      font-size: 280px;
-      font-family: "Oswald", sans-serif;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
-      color: $color-gray--light;
-    }
+.description-item__number {
+  display: none;
 
-    &--first::after {
-      content: "1";
-    }
-
-    &--second::after {
-      content: "2";
-    }
-
-    &--third::after {
-      content: "3";
-    }
-
-    &--fourth::after {
-      content: "4";
-    }
+  @include tablet-min-width {
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    font-size: 280px;
+    line-height: 280px;
+    font-family: "Oswald", sans-serif;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    color: $color-gray-light;
   }
 }
 
@@ -65,7 +52,7 @@
   margin: 0;
 
   &--color {
-    color: $color-black--dark;
+    color: $color-black-dark;
   }
 
   @include tablet-min-width {

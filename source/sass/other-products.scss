@@ -1,6 +1,4 @@
-@import "lib/mixins";
-@import "lib/vars";
-@import "lib/colors";
+@import "lib";
 
 .other-products {
   position: relative;
@@ -27,23 +25,21 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
   list-style-type: none;
 
   @include desktop-min-width {
     grid-column: 1 / 4;
-    padding: 0;
   }
 }
 
 .other-products__item:last-child {
   padding-bottom: 19px;
-  border-bottom: 2px solid $color-gray--dark;
+  border-bottom: 2px solid $color-gray-dark;
 }
 
 .other-products__promotion {
-  margin: 35px 20px 35px;
+  margin: 35px 0;
   padding-top: 58px;
   padding-bottom: 40px;
   min-height: 290px;

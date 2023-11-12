@@ -1,4 +1,5 @@
-@import "vars";
+$tablet-width: 768px;
+$desktop-width: 1440px;
 
 @mixin tablet-min-width {
   @media (min-width: $tablet-width) {

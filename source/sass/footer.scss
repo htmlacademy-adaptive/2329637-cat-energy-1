@@ -1,4 +1,4 @@
-@import "lib/colors";
+@import "lib";
 
 .footer__social {
   padding-top: 40px;
@@ -6,12 +6,12 @@
 }
 
 .footer__social--bg-c {
-  background-color: $color-gray--light;
+  background-color: $color-gray-light;
 }
 
 .footer__social-list {
   padding: 18px 0;
-  border-top: 2px solid $color-gray--dark;
-  border-bottom: 2px solid $color-gray--dark;
+  border-top: 2px solid $color-gray-dark;
+  border-bottom: 2px solid $color-gray-dark;
   width: 100%;
 }
