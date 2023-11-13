@@ -16,6 +16,10 @@
   width: 0;
   height: 0;
   opacity: 0;
+
+  &:focus ~ .custom-checkbox__mark {
+    outline: 2px solid $color-black;
+  }
 }
 
 .custom-checkbox__mark {

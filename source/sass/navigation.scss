@@ -6,22 +6,54 @@
 
 .navigation__list {
   border-bottom: 1px solid $color-special-gray;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
 
   @include tablet-min-width {
     border-bottom: unset;
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 10px 33px;
   }
 }
 
 .navigation__wrapper {
-  display: none;
+  &--closed {
+    display: none;
+  }
 
-  &--modal-open {
+  &--nojs {
     display: block;
     position: absolute;
     left: 0;
     right: 0;
     top: 65px;
     z-index: 1;
+  }
+
+  &--opened {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65px;
+    z-index: 1;
+  }
+
+  @include tablet-min-width {
+    display: flex;
+    position: unset;
+    justify-content: flex-end;
+    flex-grow: 1;
   }
 }
 
@@ -34,6 +66,7 @@
   width: 100%;
   box-sizing: border-box;
   font-size: 20px;
+  line-height: 20px;
   border-top: 1px solid $color-gray;
   color: $color-black;
   font-family: "Oswald", sans-serif;
@@ -62,8 +95,55 @@
 
 .navigation__burger-menu {
   background-color: transparent;
+  position: relative;
+  width: 24px;
+  height: 24px;
   border: none;
   display: flex;
   padding: 0;
   cursor: pointer;
+
+  @include tablet-min-width {
+    display: none;
+  }
+}
+
+.navigation__burger-menu--closed {
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 2px;
+    background-color: $color-black;
+    box-shadow:
+      0 8px $color-black,
+      0 -8px $color-black;
+  }
+}
+
+.navigation__burger-menu--opened {
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 24px;
+    height: 2px;
+    background-color: $color-black;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    width: 24px;
+    height: 2px;
+    background-color: $color-black;
+  }
 }

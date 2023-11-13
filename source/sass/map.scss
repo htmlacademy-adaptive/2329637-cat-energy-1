@@ -1,10 +1,48 @@
 @import "lib";
 
+.map {
+  position: relative;
+
+  @include desktop-min-width {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+  }
+}
+
 .map__contacts {
   padding-top: 26px;
   padding-bottom: 26px;
+
+  @include desktop-min-width {
+    background-color: $color-white;
+    align-items: center;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    z-index: 1;
+    margin: 95px 110px 106px;
+    min-width: 565px;
+    min-height: 200px;
+    box-sizing: border-box;
+  }
 }
 
 .map__contacts--bg {
   background-color: $color-gray-light;
+}
+
+.map__iframe {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 362px;
+
+  @include tablet-min-width {
+    height: 400px;
+  }
+
+  @include desktop-min-width {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
 }
