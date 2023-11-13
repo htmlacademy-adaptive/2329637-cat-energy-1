@@ -1,9 +1,3 @@
-const container = document.querySelector(".before-after-slider");
-document
-  .querySelector(".before-after-slider__slider")
-  .addEventListener("input", (e) => {
-    container.style.setProperty("--position", `${e.target.value}%`);
-  });
 let navWrapper = document.querySelector(".navigation__wrapper");
 let navToggle = document.querySelector(".navigation__burger-menu");
 navWrapper.classList.remove("navigation__wrapper--nojs");
