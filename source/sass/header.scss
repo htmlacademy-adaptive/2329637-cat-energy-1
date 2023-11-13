@@ -22,29 +22,10 @@
   margin-right: 5px;
 
   @include tablet-min-width {
-    display: none;
-  }
-}
-
-.header__logo2 {
-  display: none;
-
-  @include tablet-min-width {
-    display: block;
     margin-right: 13px;
-    flex-shrink: 0;
   }
 
   @include desktop-min-width {
-    display: none;
-  }
-}
-
-.header__logo3 {
-  display: none;
-
-  @include desktop-min-width {
-    display: block;
     margin-right: 14px;
   }
 }
