@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Каталог: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body>
     <header class="header">
@@ -155,13 +159,25 @@
         <ul class="catalog-list">
           <li class="catalog-list__item card border-top main-container">
             <div class="card__image-wrapper">
-              <img
-                class="card__image"
-                src="./img/card/chicken-pro-500g.png"
-                alt="Упаковка товара."
-                width="68"
-                height="87"
-              />
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    img/card/chicken-pro-500g-tablet.png    1x,
+                    img/card/chicken-pro-500g-tablet@2x.png 2x
+                  "
+                  width="162"
+                  height="172"
+                />
+                <img
+                  class="card__image"
+                  src="img/card/chicken-pro-500g.png"
+                  srcset="img/card/chicken-pro-500g@2x.png 2x"
+                  width="68"
+                  height="87"
+                  alt="Упаковка товара."
+                />
+              </picture>
             </div>
             <div class="card__content">
               <p class="card__header">CAT ENERGY PRO 500 Г</p>
@@ -185,13 +201,25 @@
 
           <li class="catalog-list__item card border-top main-container">
             <div class="card__image-wrapper">
-              <img
-                class="card__image"
-                src="./img/card/chicken-pro-1000g.png"
-                alt="Упаковка товара."
-                width="84"
-                height="101"
-              />
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    img/card/chicken-pro-1000g-tablet.png    1x,
+                    img/card/chicken-pro-1000g-tablet@2x.png 2x
+                  "
+                  width="168"
+                  height="206"
+                />
+                <img
+                  class="card__image"
+                  src="img/card/chicken-pro-1000g.png"
+                  srcset="img/card/chicken-pro-1000g@2x.png 2x"
+                  width="84"
+                  height="101"
+                  alt="Упаковка товара."
+                />
+              </picture>
             </div>
             <div class="card__content">
               <p class="card__header">CAT ENERGY PRO 1000 Г</p>
@@ -215,11 +243,25 @@
 
           <li class="catalog-list__item card border-top main-container">
             <div class="card__image-wrapper">
-              <img
-                class="card__image"
-                src="./img/card/fish-pro-500g.png"
-                alt="Упаковка товара."
-              />
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    img/card/fish-pro-500g-tablet.png    1x,
+                    img/card/fish-pro-500g-tablet@2x.png 2x
+                  "
+                  width="164"
+                  height="174"
+                />
+                <img
+                  class="card__image"
+                  src="img/card/fish-pro-500g.png"
+                  srcset="img/card/fish-pro-500g@2x.png 2x"
+                  width="68"
+                  height="79"
+                  alt="Упаковка товара."
+                />
+              </picture>
             </div>
             <div class="card__content">
               <p class="card__header">CAT ENERGY PRO 500 Г</p>
@@ -243,11 +285,25 @@
 
           <li class="catalog-list__item card border-top main-container">
             <div class="card__image-wrapper">
-              <img
-                class="card__image"
-                src="./img/card/fish-pro-1000g.png"
-                alt="Упаковка товара."
-              />
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    img/card/fish-pro-1000g-tablet.png    1x,
+                    img/card/fish-pro-1000g-tablet@2x.png 2x
+                  "
+                  width="168"
+                  height="200"
+                />
+                <img
+                  class="card__image"
+                  src="img/card/fish-pro-1000g.png"
+                  srcset="img/card/fish-pro-1000g@2x.png 2x"
+                  width="84"
+                  height="101"
+                  alt="Упаковка товара."
+                />
+              </picture>
             </div>
             <div class="card__content">
               <p class="card__header">CAT ENERGY PRO 1000 Г</p>
@@ -271,11 +327,25 @@
 
           <li class="catalog-list__item card border-top main-container">
             <div class="card__image-wrapper">
-              <img
-                class="card__image"
-                src="./img/card/buckwheat-slim-500g.png"
-                alt="Упаковка товара."
-              />
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    img/card/buckwheat-slim-500g-tablet.png    1x,
+                    img/card/buckwheat-slim-500g-tablet@2x.png 2x
+                  "
+                  width="162"
+                  height="172"
+                />
+                <img
+                  class="card__image"
+                  src="img/card/buckwheat-slim-500g.png"
+                  srcset="img/card/buckwheat-slim-500g@2x.png 2x"
+                  width="68"
+                  height="79"
+                  alt="Упаковка товара."
+                />
+              </picture>
             </div>
             <div class="card__content">
               <p class="card__header">CAT ENERGY SLIM 500 Г</p>
@@ -299,11 +369,25 @@
 
           <li class="catalog-list__item card border-top main-container">
             <div class="card__image-wrapper">
-              <img
-                class="card__image"
-                src="./img/card/buckwheat-slim-1000g.png"
-                alt="Упаковка товара."
-              />
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    img/card/buckwheat-slim-1000g-tablet.png    1x,
+                    img/card/buckwheat-slim-1000g-tablet@2x.png 2x
+                  "
+                  width="168"
+                  height="200"
+                />
+                <img
+                  class="card__image"
+                  src="img/card/buckwheat-slim-1000g.png"
+                  srcset="img/card/buckwheat-slim-1000g@2x.png 2x"
+                  width="84"
+                  height="101"
+                  alt="Упаковка товара."
+                />
+              </picture>
             </div>
             <div class="card__content">
               <p class="card__header">CAT ENERGY SLIM 1000 Г</p>
@@ -327,11 +411,25 @@
 
           <li class="catalog-list__item card border-top main-container">
             <div class="card__image-wrapper">
-              <img
-                class="card__image"
-                src="./img/card/rice-slim-500g.png"
-                alt="Упаковка товара."
-              />
+              <picture>
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    img/card/rice-slim-500g-tablet.png    1x,
+                    img/card/rice-slim-500g-tablet@2x.png 2x
+                  "
+                  width="164"
+                  height="174"
+                />
+                <img
+                  class="card__image"
+                  src="./img/card/rice-slim-500g.png"
+                  srcset="./img/card/rice-slim-500g@2x.png 2x"
+                  width="72"
+                  height="85"
+                  alt="Упаковка товара."
+                />
+              </picture>
             </div>
             <div class="card__content">
               <p class="card__header">CAT ENERGY SLIM 500 Г</p>
@@ -460,13 +558,34 @@
 
           <div class="other-products__promotion promotion">
             <div class="promotion__bg-wrapper">
-              <img
-                class="promotion__bg-image"
-                src="./img/promotion/background.jpg"
-                width="279"
-                height="290"
-                alt="Чехол для кота"
-              />
+              <picture>
+                <source
+                  media="(min-width:1440px)"
+                  srcset="
+                    img/promotion/background.png    1x,
+                    img/promotion/background@2x.png 2x
+                  "
+                  width="279"
+                  height="290"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    img/promotion/background-tablet.png    1x,
+                    img/promotion/background-tablet@2x.png 2x
+                  "
+                  width="707"
+                  height="200"
+                />
+                <img
+                  class="promotion__bg-image"
+                  src="img/promotion/background.png"
+                  srcset="img/promotion/background@2x.png 2x"
+                  width="279"
+                  height="290"
+                  alt="Чехол для кота"
+                />
+              </picture>
             </div>
             <svg
               class="promotion__icon"

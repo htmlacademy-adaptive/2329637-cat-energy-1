@@ -12,3 +12,9 @@ $desktop-width: 1440px;
     @content;
   }
 }
+
+@mixin dppx-2 {
+  @media (min-resolution: 2dppx) {
+    @content;
+  }
+}

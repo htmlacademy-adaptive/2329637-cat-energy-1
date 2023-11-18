@@ -4,7 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Кэт энерджи</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body>
     <header class="header">
@@ -161,13 +165,25 @@
     <main>
       <section class="hero main-container">
         <div class="hero__background-wrapper">
-          <img
-            class="hero__background-photo"
-            src="./img/hero/background-photo.jpg"
-            alt="Фон с котом."
-            width="320"
-            height="302"
-          />
+          <picture>
+            <source
+              media="(min-width:1440px)"
+              srcset="
+                img/hero/index-background-desktop.jpg    1x,
+                img/hero/index-background-desktop@2x.jpg 2x
+              "
+              width="720"
+              height="694"
+            />
+            <img
+              class="hero__background-photo"
+              src="img/hero/index-background.jpg"
+              srcset="img/hero/index-background@2x.jpg 2x"
+              width="320"
+              height="302"
+              alt="Фон с котом."
+            />
+          </picture>
         </div>
 
         <h1 class="hero__header hero__header--color page-header">
@@ -176,11 +192,34 @@
         <p class="hero__header-slogan hero__header-slogan--color header-slogan">
           занялся собой? займись котом!
         </p>
-        <img
-          class="hero__image"
-          src="./img/hero/image.png"
-          alt="Упаковка кошачьего корма Cat Energy"
-        />
+        <picture>
+          <source
+            media="(min-width:1440px)"
+            srcset="
+              img/hero/index-can-desktop.png    1x,
+              img/hero/index-can-desktop@2x.png 2x
+            "
+            width="552"
+            height="499"
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="
+              img/hero/index-can-tablet.png    1x,
+              img/hero/index-can-tablet@2x.png 2x
+            "
+            width="709"
+            height="609"
+          />
+          <img
+            class="hero__image"
+            src="img/hero/index-can-mobile.png"
+            srcset="img/hero/index-can-mobile@2x.png 2x"
+            width="280"
+            height="270"
+            alt="Упаковка кошачьего корма Cat Energy"
+          />
+        </picture>
         <a
           class="hero__button button-primary button button--long"
           href="./form.html"
@@ -385,16 +424,44 @@
 
         <div class="living-example__before-after-slider before-after-slider">
           <div class="before-after-slider__image-container">
-            <img
-              class="before-after-slider__image-after before-after-slider__image"
-              src="./img/before-after-slider/cat-after.png"
-              alt="вес кота после"
-            />
-            <img
-              class="before-after-slider__image-before before-after-slider__image"
-              src="./img/before-after-slider/cat-before.png"
-              alt="вес кота до"
-            />
+            <picture>
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  img/before-after-slider/cat-after-tablet.png    1x,
+                  img/before-after-slider/cat-after-tablet@2x.png 2x
+                "
+                width="560"
+                height="512"
+              />
+              <img
+                class="before-after-slider__image-after before-after-slider__image"
+                src="img/before-after-slider/cat-after.png"
+                srcset="img/before-after-slider/cat-after@2x.png 2x"
+                alt="вес кота после"
+                width="280"
+                height="256"
+              />
+            </picture>
+            <picture>
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  img/before-after-slider/cat-before-tablet.png    1x,
+                  img/before-after-slider/cat-before-tablet@2x.png 2x
+                "
+                width="560"
+                height="512"
+              />
+              <img
+                class="before-after-slider__image-before before-after-slider__image"
+                src="./img/before-after-slider/cat-before.png"
+                srcset="img/before-after-slider/cat-before@2x.png 2x"
+                width="280"
+                height="256"
+                alt="вес кота до"
+              />
+            </picture>
           </div>
           <!-- step="10" -->
           <input
