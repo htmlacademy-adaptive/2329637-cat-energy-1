@@ -77,6 +77,8 @@
 
   &--show-more {
     margin-bottom: 23px;
+    width: 30px;
+    height: 30px;
   }
 
   @include tablet-min-width {

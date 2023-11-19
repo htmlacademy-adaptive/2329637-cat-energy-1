@@ -14,6 +14,12 @@
 }
 
 .partners__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 23px;
+  width: 100%;
+
   text-decoration: none;
   color: $color-black-dark;
   word-break: break-word;
@@ -27,6 +33,11 @@
 .partners__logo {
   display: flex;
   flex-shrink: 0;
+}
+
+.partners__icon {
+  width: 27px;
+  height: 34px;
 }
 
 .partners__wrapper {

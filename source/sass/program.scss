@@ -78,8 +78,36 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: auto;
+  &--slim {
+    width: 36px;
+    height: 50px;
+  }
+  &--power {
+    width: 67px;
+    height: 28px;
+  }
+
+  @include tablet-min-width {
+    &--slim {
+      width: 140px;
+      height: 194px;
+    }
+    &--power {
+      width: 268px;
+      height: 112px;
+    }
+  }
+
+  @include desktop-min-width {
+    &--slim {
+      width: 70px;
+      height: 97px;
+    }
+    &--power {
+      width: 134px;
+      height: 56px;
+    }
+  }
 }
 
 .program__text {

@@ -45,7 +45,7 @@
   height: 100%;
 }
 
-.before-after-slider__slider:focus-visible ~ .before-after-slider__slider-button {
+.before-after-slider__slider:focus-visible ~ .before-after-slider__slider-button-wrapper {
   outline: 5px solid $color-black;
   outline-offset: 3px;
 }
@@ -62,7 +62,7 @@
   pointer-events: none;
 }
 
-.before-after-slider__slider-button {
+.before-after-slider__slider-button-wrapper {
   position: absolute;
   display: grid;
   place-items: center;
@@ -70,4 +70,9 @@
   left: var(--position);
   transform: translate(-50%, -50%);
   pointer-events: none;
+}
+
+.before-after-slider__slider-button {
+  width: 40px;
+  height: 40px;
 }

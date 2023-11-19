@@ -24,9 +24,6 @@
 
 .social__font-logo {
   flex-shrink: 0;
-  width: 100%;
-
-  @include tablet-min-width {
-    width: auto;
-  }
+  width: 128px;
+  height: 24px;
 }

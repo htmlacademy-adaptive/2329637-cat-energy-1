@@ -20,6 +20,7 @@
 
 .header__logo {
   margin-right: 5px;
+  flex-shrink: 0;
 
   @include tablet-min-width {
     margin-right: 13px;
@@ -39,8 +40,15 @@
 }
 
 .header__font-logo {
+  width: 101px;
+  height: 18px;
+
   @include tablet-min-width {
     margin-right: 20px;
     flex-shrink: 0;
+  }
+  @include desktop-min-width {
+    width: 118px;
+    height: 21px;
   }
 }
