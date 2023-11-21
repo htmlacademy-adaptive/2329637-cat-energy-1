@@ -79,7 +79,7 @@
     </header>
 
     <main>
-      <section class="hero main-container">
+      <section class="hero main-container main-container--index">
         <div class="hero__background-wrapper">
           <picture>
             <source
@@ -137,7 +137,7 @@
           />
         </picture>
         <a
-          class="hero__button button-primary button button--long"
+          class="hero__button button-primary button button--long button--tall"
           href="./form.html"
         >
           Подобрать программу
@@ -253,12 +253,33 @@
             </div>
           </div>
 
-          <p class="living-example__cost">затраты на питание: 15 000 руб.</p>
+          <p class="living-example__cost">
+            затраты на питание: <span> 15 000 руб.</span>
+          </p>
         </div>
 
         <div class="living-example__before-after-slider before-after-slider">
           <div class="before-after-slider__image-container">
             <picture>
+              <source
+                type="image/webp"
+                media="(min-width:768px)"
+                srcset="
+                  img/before-after-slider/cat-after-tablet.webp    1x,
+                  img/before-after-slider/cat-after-tablet@2x.webp 2x
+                "
+                width="560"
+                height="512"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/before-after-slider/cat-after.webp    1x,
+                  img/before-after-slider/cat-after@2x.webp 2x
+                "
+                width="280"
+                height="256"
+              />
               <source
                 media="(min-width:768px)"
                 srcset="
@@ -278,6 +299,25 @@
               />
             </picture>
             <picture>
+              <source
+                type="image/webp"
+                media="(min-width:768px)"
+                srcset="
+                  img/before-after-slider/cat-before-tablet.webp    1x,
+                  img/before-after-slider/cat-before-tablet@2x.webp 2x
+                "
+                width="560"
+                height="512"
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  img/before-after-slider/cat-before.webp    1x,
+                  img/before-after-slider/cat-before@2x.webp 2x
+                "
+                width="280"
+                height="256"
+              />
               <source
                 media="(min-width:768px)"
                 srcset="

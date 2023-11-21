@@ -21,15 +21,23 @@
     padding-top: 51px;
     margin-bottom: 54px;
   }
+
+  @include desktop-min-width {
+    padding-top: 60px;
+  }
 }
 
 .form__header-slogan {
   margin: 0 0 39px;
   width: 226px;
+  text-transform: uppercase;
+  line-height: 17px;
 
   @include tablet-min-width {
     margin-bottom: 66px;
-    width: 324px;
+    width: 350px;
+    max-width: unset;
+    line-height: 30px;
   }
 }
 
@@ -42,13 +50,14 @@
 
   @include tablet-min-width {
     margin-bottom: 72px;
-    gap: 21px;
+    gap: 19px;
   }
 
   @include desktop-min-width {
     grid-column: span 2;
     padding-right: 0;
     margin-bottom: 0;
+    gap: 20px;
   }
 }
 
@@ -60,6 +69,10 @@
   @include tablet-min-width {
     border: 1px solid $color-gray-dark;
     padding: 23px 27px 27px;
+  }
+
+  @include desktop-min-width {
+    padding: 23px 27px 25px;
   }
 }
 
@@ -107,10 +120,18 @@
   }
 }
 
+.form__user-contacts-header > .subtitle__text {
+  width: 185px;
+
+  @include tablet-min-width {
+    width: unset;
+  }
+}
+
 .form__user-contacts-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 19px;
 
   @include desktop-min-width {
     display: grid;
@@ -138,6 +159,10 @@
   @include tablet-min-width {
     margin-bottom: 87px;
   }
+
+  @include desktop-min-width {
+    margin-bottom: 79px;
+  }
 }
 
 .form__other-products {
@@ -158,11 +183,12 @@
   @include tablet-min-width {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px 80px;
+    gap: 32px 60px;
   }
 
   @include desktop-min-width {
     grid-template-columns: repeat(4, 1fr);
+    gap: 32px 80px;
   }
 }
 
@@ -178,7 +204,7 @@
     grid-template-columns: repeat(4, 1fr);
     justify-items: start;
     align-items: center;
-    gap: 80px;
+    gap: 60px;
     margin-top: 52px;
     margin-bottom: 60px;
   }
@@ -188,15 +214,19 @@
     margin-top: 0;
     margin-bottom: 79px;
   }
+
+  @include desktop-min-width {
+    gap: 80px;
+    margin-bottom: 68px;
+  }
 }
 
 .form__button {
-  margin-top: 34px;
+  margin-top: 32px;
 
   @include tablet-min-width {
     width: 210px;
     margin-top: 0;
-    font-size: 20px;
     grid-column: span 2;
   }
 
@@ -207,11 +237,11 @@
 
 .form__note {
   text-align: center;
-  margin: 21px 0 32px;
+  margin: 21px 0 30px;
   word-break: break-word;
 
   @include tablet-min-width {
-    margin: 0;
+    margin: 0 0 4px;
     font-size: 16px;
     grid-column: span 2;
   }

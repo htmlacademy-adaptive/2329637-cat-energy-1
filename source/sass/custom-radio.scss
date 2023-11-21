@@ -7,7 +7,7 @@
   gap: 15px;
 
   @include tablet-min-width {
-    gap: 20px;
+    gap: 19px;
   }
 }
 
@@ -51,6 +51,11 @@
   @include tablet-min-width {
     width: 40px;
     height: 40px;
+
+    &::after {
+      width: 18px;
+      height: 18px;
+    }
   }
 }
 

@@ -12,10 +12,20 @@
       padding-left: 70px;
       padding-right: 70px;
     }
+
+    &--index {
+      padding-left: 120px;
+      padding-right: 120px;
+    }
   }
 
   @include desktop-min-width {
     padding-left: 110px;
     padding-right: 110px;
+
+    &--index {
+      padding-left: 190px;
+      padding-right: 190px;
+    }
   }
 }

@@ -95,7 +95,7 @@
               <input
                 class="fieldset__input"
                 type="text"
-                placeholder="Барсик"
+                placeholder="БАРСИК"
                 name="cat-name"
                 id="cat-name"
                 required
@@ -195,27 +195,13 @@
                 <input
                   class="fieldset__input"
                   type="email"
-                  placeholder="BARSIK@GMAIL.COM"
+                  placeholder="KUKLACHEV@GMAIL.COM"
                   name="e-mail"
                   required
                   id="email"
                 />
-                <svg
-                  class="fieldset__icon"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g>
-                    <path
-                      d="M1.50034 8.5V16.5H18.5041V8.5M1.50034 3.5H18.5041V5.5L10.0022 11.5L1.50034 5.5V3.5Z"
-                      stroke="black"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
+                <svg class="fieldset__icon">
+                  <use href="img/sprite/sprite.svg#icon-post"></use>
                 </svg>
               </div>
 
@@ -227,27 +213,13 @@
                   class="fieldset__input"
                   type="tel"
                   pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                  placeholder="8-800-555-35-35"
+                  placeholder="8-(960)-900-60-90"
                   name="phone"
                   required
                   id="phone"
                 />
-                <svg
-                  class="fieldset__icon"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g>
-                    <path
-                      d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z"
-                      stroke="black"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
+                <svg class="fieldset__icon">
+                  <use href="img/sprite/sprite.svg#icon-phone"></use>
                 </svg>
               </div>
             </div>
@@ -266,7 +238,7 @@
                 name="comment"
                 cols="50"
                 rows="4"
-                placeholder="РАССКАЖИТЕ О ВСЕХ ПОВАДКАХ КОТА"
+                placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"
               ></textarea>
             </label>
           </fieldset>
@@ -333,7 +305,7 @@
 
           <div class="form__button-wrapper main-container main-container--form">
             <button
-              class="form__button button-primary button button--long"
+              class="form__button button-primary button button--long button--tall"
               type="submit"
             >
               отправить заявку

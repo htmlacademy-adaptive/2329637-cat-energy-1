@@ -9,11 +9,12 @@
 
   @include tablet-min-width {
     align-items: flex-start;
+    min-height: 860px;
   }
 
   @include desktop-min-width {
     min-height: 566px;
-    margin-bottom: 62px;
+    margin-bottom: 81px;
   }
 }
 
@@ -23,7 +24,7 @@
   left: 0;
   right: 0;
   top: 0;
-  bottom: 195px;
+  bottom: 198px;
   object-fit: cover;
   z-index: -1;
 
@@ -46,7 +47,7 @@
     display: flex;
     left: 50%;
     top: -147px;
-    height: 694px;
+    height: 712px;
   }
 }
 
@@ -72,9 +73,8 @@
   @include tablet-min-width {
     max-width: 420px;
     align-self: flex-start;
-    margin-left: 60px;
     margin-bottom: 40px;
-    padding-top: 51px;
+    padding-top: 50px;
 
     line-height: 60px;
     text-align: left;
@@ -90,6 +90,7 @@
   margin: 0 0 29px;
   order: -2;
   text-align: center;
+  text-transform: uppercase;
 
   &--color {
     color: $color-white;
@@ -97,8 +98,7 @@
 
   @include tablet-min-width {
     align-self: flex-start;
-    margin-bottom: 50px;
-    margin-left: 60px;
+    margin-bottom: 49px;
     text-align: left;
   }
 
@@ -108,17 +108,14 @@
 }
 
 .hero__button {
-  margin-top: auto;
+  margin-top: 1px;
   margin-bottom: 20px;
 
   @include tablet-min-width {
     align-self: flex-start;
-    font-size: 20px;
-    line-height: 26px;
     order: -1;
     max-width: 244px;
     margin-bottom: 0;
-    margin-left: 60px;
     padding: 14px 40px;
   }
 
@@ -128,17 +125,20 @@
 }
 
 .hero__image {
+  display: block;
+
   @include tablet-min-width {
-    position: relative;
-    top: -83px;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
     display: block;
     z-index: -1;
   }
 
   @include desktop-min-width {
     position: absolute;
-    top: 10px;
-    left: 50%;
+    top: 14px;
+    left: 58%;
     transform: translateX(-50%);
   }
 }

@@ -8,8 +8,9 @@
 
   @include tablet-min-width {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 70px 0 75px;
+    padding: 0 0 0 0;
   }
 
   @include desktop-min-width {
@@ -53,6 +54,12 @@
 
   @include tablet-min-width {
     margin: 0;
+    padding-left: 79px;
+  }
+
+  @include desktop-min-width {
+    padding-left: 0;
+    padding-top: 15px;
   }
 }
 
@@ -61,13 +68,16 @@
   width: 170px;
   text-align: center;
   font-size: 16px;
+  line-height: 20px;
 
   @include tablet-min-width {
     text-align: start;
+    padding-right: 116px;
   }
 
   @include desktop-min-width {
     text-align: center;
+    padding: 0;
   }
 }
 

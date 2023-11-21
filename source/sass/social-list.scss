@@ -6,13 +6,12 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 10px 24px;
 
   @include tablet-min-width {
+    justify-content: center;
     flex-shrink: 0;
-    width: auto;
     border: none;
-    max-width: 33%;
   }
 }
 

@@ -18,7 +18,7 @@
 
 .fieldset__input {
   width: 10px;
-  padding: 12px 15px;
+  padding: 14px 15px 10px;
   flex-grow: 1;
 
   font-size: 16px;
@@ -28,7 +28,7 @@
   color: $color-black-dark;
 
   @include tablet-min-width {
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 20px;
   }
 }
@@ -37,7 +37,7 @@
   width: 100%;
   min-height: 150px;
   box-sizing: border-box;
-  padding: 14px;
+  padding: 10px 19px;
   resize: none;
 
   font-family: "Oswald", sans-serif;
@@ -48,9 +48,20 @@
     min-height: 175px;
     font-size: 20px;
   }
+
+  @include desktop-min-width {
+    padding: 8px 19px;
+  }
 }
 
 .fieldset__icon {
   position: absolute;
-  right: 12px;
+  right: 14px;
+  width: 20px;
+  height: 20px;
+  fill: none;
+
+  @include desktop-min-width {
+    right: 16px;
+  }
 }

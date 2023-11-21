@@ -16,7 +16,7 @@
     position: relative;
     display: grid;
     align-items: start;
-    gap: 24px 60px;
+    gap: 22px 60px;
     grid-template-columns: 1fr auto;
     grid-template-areas:
       "heading image"
@@ -47,7 +47,7 @@
   word-break: break-word;
 
   @include tablet-min-width {
-    font-size: 36px;
+    font-size: 34px;
     line-height: 36px;
   }
 }
@@ -78,10 +78,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   &--slim {
     width: 36px;
     height: 50px;
   }
+
   &--power {
     width: 67px;
     height: 28px;
@@ -92,6 +94,7 @@
       width: 140px;
       height: 194px;
     }
+
     &--power {
       width: 268px;
       height: 112px;
@@ -103,6 +106,7 @@
       width: 70px;
       height: 97px;
     }
+
     &--power {
       width: 134px;
       height: 56px;
@@ -116,7 +120,7 @@
   padding-bottom: 23px;
 
   color: $color-black-dark;
-  border-bottom: 2px solid $color-gray-dark;
+  border-bottom: 1px solid $color-gray-dark;
   word-break: break-word;
 
   @include tablet-min-width {
@@ -125,25 +129,29 @@
     max-width: 600px;
 
     font-size: 16px;
-    line-height: 24px;
+    line-height: 25px;
   }
 
   @include desktop-min-width {
     padding-top: 12px;
+    line-height: 24px;
   }
 }
 
 .program__link {
-  padding-right: 15px;
+  padding-right: 13px;
 
   font-family: "Oswald", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 15px;
   text-decoration: none;
+  text-transform: uppercase;
   color: $color-black;
 
   @include tablet-min-width {
     font-size: 20px;
+    padding-right: 21px;
   }
 }
 
@@ -152,9 +160,15 @@
 
   &::after {
     content: url("../img/program/icon-arrow.svg");
+    position: relative;
+    top: -3px;
   }
 
   @include tablet-min-width {
-    margin-top: 28px;
+    margin-top: 36px;
+  }
+
+  @include desktop-min-width {
+    margin-top: 8px;
   }
 }

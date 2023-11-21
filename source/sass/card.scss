@@ -32,8 +32,10 @@
 
     &--other-products {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 3fr 2fr;
       border: 1px solid $color-special-gray;
+      padding: 24px 37px 28px;
+      align-items: baseline;
       border-bottom: none;
       background-color: unset;
     }
@@ -47,7 +49,7 @@
   @include desktop-min-width {
     &--other-products {
       grid-template-columns: repeat(3, 1fr);
-      padding: 15px 0 17px;
+      padding: 15px 0 16px;
       gap: 80px;
     }
   }
@@ -61,7 +63,7 @@
 
   @include tablet-min-width {
     position: absolute;
-    top: -81px;
+    top: -70px;
     margin-bottom: auto;
     align-items: center;
     justify-content: center;
@@ -88,10 +90,20 @@
       margin-bottom: 50px;
     }
   }
+
+  @include desktop-min-width {
+    &--show-more {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .card__content {
   width: 50%;
+
+  &--show-more {
+    width: 100%;
+  }
 
   @include tablet-min-width {
     width: 100%;
@@ -116,24 +128,36 @@
 
   &--other-products {
     width: 100%;
-    margin-bottom: 13px;
+    margin-bottom: 9px;
   }
 
   @include tablet-min-width {
     width: 135px;
-    margin: 0 auto 14px;
+    margin: 0 auto 18px;
     text-align: center;
     font-size: 20px;
     line-height: 24px;
 
     &--show-more {
-      margin-bottom: 23px;
+      margin-bottom: 20px;
     }
 
     &--other-products {
       display: flex;
       width: 100%;
       margin: 0;
+    }
+  }
+
+  @include desktop-min-width {
+    margin-bottom: 23px;
+
+    &--show-more {
+      margin-bottom: 27px;
+    }
+
+    &--other-products {
+      margin-bottom: 0;
     }
   }
 }
@@ -160,7 +184,7 @@
     width: 100%;
     font-size: 16px;
     line-height: 20px;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
     border-bottom: 1px solid $color-special-gray;
 
     &:not(:first-of-type) {
@@ -176,6 +200,20 @@
     &--other-products {
       border: none;
       padding: 0;
+      width: unset;
+      margin-right: 3px;
+      justify-content: flex-end;
+      gap: 50px;
+    }
+  }
+
+  @include desktop-min-width {
+    line-height: 16px;
+    padding-bottom: 11px;
+
+    &--show-more {
+      line-height: 18px;
+      padding-bottom: 14px;
     }
   }
 }
@@ -187,7 +225,7 @@
 }
 
 .card__button {
-  margin-top: 17px;
+  margin-top: 20px;
 
   &--other-products {
     margin-top: 15px;
@@ -198,11 +236,15 @@
   }
 
   @include tablet-min-width {
-    margin-top: 32px;
+    margin-top: 33px;
 
     &--other-products {
-      margin-top: 25px;
+      margin-top: 21px;
       grid-column: 1/-1;
+    }
+
+    &--show-more {
+      margin-top: 74px;
     }
   }
 

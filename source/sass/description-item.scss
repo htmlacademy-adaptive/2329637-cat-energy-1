@@ -26,9 +26,13 @@
     line-height: 280px;
     font-family: "Oswald", sans-serif;
     bottom: 0;
-    right: 0;
+    right: 3px;
     z-index: -1;
     color: $color-gray-light;
+  }
+
+  @include desktop-min-width {
+    right: -2px;
   }
 }
 
@@ -42,6 +46,7 @@
 
   @include tablet-min-width {
     margin-top: 40px;
+    padding: 26px;
     width: 80px;
     height: 80px;
   }

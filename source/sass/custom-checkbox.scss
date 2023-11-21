@@ -39,6 +39,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  @include tablet-min-width {
+    width: 40px;
+    height: 40px;
+
+    &::after {
+      transform: scale(1.4) translate(-34%, -42%);
+    }
+  }
 }
 
 .custom-checkbox__button:checked ~ .custom-checkbox__mark::after {
