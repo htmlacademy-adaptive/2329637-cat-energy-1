@@ -164,12 +164,17 @@
               </label>
 
               <label class="label label--uppercase">
-                <span class="custom-radio">
+                <!-- если радио-кнопка неактивна добавить класс custom-radio--disabled -->
+
+                <span class="custom-radio custom-radio--disabled">
+                  <!-- если инпут неактивен добавить тегу input атрибут disabled -->
+
                   <input
                     class="custom-radio__button"
                     type="radio"
                     name="program"
                     value="dont-know"
+                    disabled
                   />
                   <span class="custom-radio__checkmark"></span>
                   не знаю (нужен ваш совет)
@@ -207,8 +212,9 @@
 
               <div class="fieldset__item">
                 <label class="label label--uppercase" for="phone">
-                  телефон:*</label
-                >
+                  телефон:*
+                </label>
+
                 <input
                   class="fieldset__input"
                   type="tel"
@@ -218,6 +224,7 @@
                   required
                   id="phone"
                 />
+
                 <svg class="fieldset__icon">
                   <use href="img/sprite/sprite.svg#icon-phone"></use>
                 </svg>
@@ -290,11 +297,16 @@
               </label>
 
               <label class="label label--uppercase">
-                <span class="custom-checkbox">
+                <!-- если радио-кнопка неактивна добавить класс custom-radio--disabled -->
+
+                <span class="custom-checkbox custom-checkbox--disabled">
+                  <!-- если инпут неактивен добавить тегу input атрибут disabled -->
+
                   <input
                     class="custom-checkbox__button"
                     type="checkbox"
                     name="vitamins"
+                    disabled
                   />
                   <span class="custom-checkbox__mark"></span>
                   Витамины
@@ -327,7 +339,10 @@
         </div>
         <iframe
           class="map__iframe"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7737931.147483183!2d41.57504570283016!3d-18.740726962382528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21d1a4e3ea238545%3A0x5244e3c1977b1388!2z0JzQsNC00LDQs9Cw0YHQutCw0YA!5e0!3m2!1sru!2sru!4v1699876862666!5m2!1sru!2sru"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6725.717844900154!2d47.52511582230688!3d-18.901206241158437!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07e0054cd6897%3A0x602d670ffda20d18!2zTHljZWUgSi5KIFJhYmVhcml2ZWxvLCBBbnRhbmFuYXJpdm8sINCc0LDQtNCw0LPQsNGB0LrQsNGA!5e0!3m2!1sru!2sru!4v1700669082121!5m2!1sru!2sru"
+          width="600"
+          height="450"
+          style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"

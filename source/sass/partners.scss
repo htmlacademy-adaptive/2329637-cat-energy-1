@@ -9,6 +9,7 @@
   @include tablet-min-width {
     width: 33%;
     gap: 23px;
+    justify-content: flex-end;
   }
 }
 
@@ -25,18 +26,19 @@
   color: $color-black-dark;
   word-break: break-word;
 
-  &:hover {
-    color: $color-green;
+  &:hover .partners__icon {
+    fill: $color-green;
   }
 
   &:active {
-    opacity: 0.8;
+    opacity: 0.3;
   }
 
   @include tablet-min-width {
     justify-content: flex-end;
     line-height: 20px;
     margin-top: 0;
+    width: fit-content;
   }
 }
 
