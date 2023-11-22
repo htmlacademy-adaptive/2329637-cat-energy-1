@@ -20,7 +20,16 @@
   line-height: 0;
 }
 
+.social-list__link:hover .social-list__icon {
+  fill: $color-green;
+}
+
+.social-list__link:active .social-list__icon {
+  opacity: 0.3;
+}
+
 .social-list__icon {
   width: 28px;
   height: 22px;
+  fill: $color-black-light;
 }

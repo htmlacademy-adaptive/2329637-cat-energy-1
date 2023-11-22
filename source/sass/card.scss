@@ -48,9 +48,10 @@
 
   @include desktop-min-width {
     &--other-products {
-      grid-template-columns: repeat(3, 1fr);
-      padding: 15px 0 16px;
-      gap: 80px;
+      grid-template-columns: 1fr 1fr 245px;
+      align-items: center;
+      padding: 17px 0 14px;
+      gap: 0;
     }
   }
 }
@@ -215,12 +216,18 @@
       line-height: 18px;
       padding-bottom: 14px;
     }
+
+    &--other-products {
+      display: grid;
+      grid-template-columns: 194px 78px;
+      justify-items: start;
+      padding-bottom: 0;
+    }
   }
 }
 
 .card__info-right {
   display: flex;
-  flex-shrink: 0;
   align-items: center;
 }
 

@@ -3,4 +3,12 @@
 .button-secondary {
   background-color: $color-gray-light;
   color: $color-black-dark;
+
+  &:hover {
+    background-color: $button-secondary-hover;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }

@@ -149,6 +149,21 @@
   text-transform: uppercase;
   color: $color-black;
 
+  &::after {
+    content: url("../img/program/icon-arrow.svg");
+    position: relative;
+    top: -3px;
+    left: 22px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @include tablet-min-width {
     font-size: 20px;
     padding-right: 21px;
@@ -157,12 +172,6 @@
 
 .program__link-wrapper {
   grid-area: link;
-
-  &::after {
-    content: url("../img/program/icon-arrow.svg");
-    position: relative;
-    top: -3px;
-  }
 
   @include tablet-min-width {
     margin-top: 36px;

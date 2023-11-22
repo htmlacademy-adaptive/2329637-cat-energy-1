@@ -13,27 +13,29 @@
   <body>
     <header class="header">
       <div class="header__wrapper main-container">
-        <picture>
-          <source
-            media="(min-width:1440px)"
-            srcset="img/header/header-logo-desktop.svg"
-            width="70"
-            height="59"
-          />
-          <source
-            media="(min-width:768px)"
-            srcset="img/header/header-logo-tablet.svg"
-            width="60"
-            height="50"
-          />
-          <img
-            class="header__logo"
-            src="img/header/header-logo.svg"
-            width="33"
-            height="38"
-            alt="Логотип CatEnergy"
-          />
-        </picture>
+        <a class="header__logo-link" href="#">
+          <picture>
+            <source
+              media="(min-width:1440px)"
+              srcset="img/header/header-logo-desktop.svg"
+              width="70"
+              height="59"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="img/header/header-logo-tablet.svg"
+              width="60"
+              height="50"
+            />
+            <img
+              class="header__logo"
+              src="img/header/header-logo.svg"
+              width="33"
+              height="38"
+              alt="Логотип CatEnergy"
+            />
+          </picture>
+        </a>
         <svg class="header__font-logo">
           <use href="img/sprite/sprite.svg#font-logo"></use>
         </svg>
@@ -176,17 +178,15 @@
             </div>
           </fieldset>
 
-          <fieldset class="fieldset form__user-contacts">
-            <legend
-              class="fieldset__legend form__user-contacts-header subtitle"
-            >
-              <span class="subtitle__text"
+          <fieldset class="fieldset form__user-contacts user-contacts">
+            <legend class="fieldset__legend user-contacts__header subtitle">
+              <span class="user-contacts__subtitle subtitle__text"
                 >Контактные данные (владельца кота)
               </span>
             </legend>
 
             <div
-              class="form__user-contacts-wrapper main-container main-container--form"
+              class="user-contacts__wrapper main-container main-container--form"
             >
               <div class="fieldset__item">
                 <label class="label label--uppercase" for="email">
@@ -336,9 +336,11 @@
 
       <div class="footer__social footer__social--bg-c social main-container">
         <div class="social__logo-wrapper">
-          <svg class="social__font-logo">
-            <use href="img/sprite/sprite.svg#font-logo"></use>
-          </svg>
+          <a class="social__font-logo-link" href="#">
+            <svg class="social__font-logo">
+              <use href="img/sprite/sprite.svg#font-logo"></use>
+            </svg>
+          </a>
         </div>
         <ul class="footer__social-list social-list">
           <li class="social-list__item">

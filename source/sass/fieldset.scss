@@ -27,6 +27,19 @@
   font-family: "Oswald", sans-serif;
   color: $color-black-dark;
 
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    --webkit-appearance: none;
+  }
+
+  &--invalid {
+    border: 2px solid $color-error;
+  }
+
+  .fieldset__input:hover ~ .fieldset__icon {
+    fill: #68b738;
+  }
+
   @include tablet-min-width {
     padding: 10px 20px;
     font-size: 20px;
@@ -54,12 +67,21 @@
   }
 }
 
+.fieldset__input:focus ~ .fieldset__icon {
+  stroke: $color-green;
+}
+
 .fieldset__icon {
   position: absolute;
   right: 14px;
   width: 20px;
   height: 20px;
   fill: none;
+  stroke: $color-black;
+
+  &--error {
+    stroke: $color-error;
+  }
 
   @include desktop-min-width {
     right: 16px;

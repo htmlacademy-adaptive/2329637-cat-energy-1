@@ -25,6 +25,14 @@
   color: $color-black-dark;
   word-break: break-word;
 
+  &:hover {
+    color: $color-green;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
   @include tablet-min-width {
     justify-content: flex-end;
     line-height: 20px;

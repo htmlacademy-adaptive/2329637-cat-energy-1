@@ -27,3 +27,15 @@
   width: 128px;
   height: 24px;
 }
+
+.social__font-logo-link {
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

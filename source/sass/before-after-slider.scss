@@ -52,9 +52,30 @@
   height: 100%;
 }
 
-.before-after-slider__slider:focus-visible ~ .before-after-slider__slider-button-wrapper {
-  outline: 5px solid $color-black;
-  outline-offset: 3px;
+.before-after-slider__slider:hover ~ .before-after-slider__slider-line {
+  background-color: $color-green;
+}
+
+.before-after-slider__slider:hover ~ .before-after-slider__slider-button {
+  stroke: $color-green;
+  fill: $color-green;
+}
+
+.before-after-slider__slider:focus ~ .before-after-slider__slider-line {
+  background-color: $color-green;
+}
+
+.before-after-slider__slider:focus ~ .before-after-slider__slider-button {
+  stroke: $color-green;
+  fill: $color-green;
+}
+
+.before-after-slider__slider:active ~ .before-after-slider__slider-line {
+  opacity: 0.6;
+}
+
+.before-after-slider__slider:active ~ .before-after-slider__slider-button {
+  opacity: 0.6;
 }
 
 .before-after-slider__slider-line {
@@ -69,7 +90,9 @@
   pointer-events: none;
 }
 
-.before-after-slider__slider-button-wrapper {
+.before-after-slider__slider-button {
+  width: 40px;
+  height: 40px;
   position: absolute;
   display: grid;
   place-items: center;
@@ -77,9 +100,6 @@
   left: var(--position);
   transform: translate(-50%, -50%);
   pointer-events: none;
-}
-
-.before-after-slider__slider-button {
-  width: 40px;
-  height: 40px;
+  fill: $color-black-light;
+  stroke: $color-black-light;
 }

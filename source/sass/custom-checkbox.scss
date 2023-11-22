@@ -6,6 +6,11 @@
   word-break: break-word;
   gap: 15px;
 
+  &--disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
   @include tablet-min-width {
     gap: 20px;
   }

@@ -13,30 +13,35 @@
   <body>
     <header class="header">
       <div class="header__wrapper main-container">
-        <picture>
-          <source
-            media="(min-width:1440px)"
-            srcset="img/header/header-logo-desktop.svg"
-            width="70"
-            height="59"
-          />
-          <source
-            media="(min-width:768px)"
-            srcset="img/header/header-logo-tablet.svg"
-            width="60"
-            height="50"
-          />
-          <img
-            class="header__logo"
-            src="img/header/header-logo.svg"
-            width="33"
-            height="38"
-            alt="Логотип CatEnergy"
-          />
-        </picture>
-        <svg class="header__font-logo">
-          <use href="img/sprite/sprite.svg#font-logo"></use>
-        </svg>
+        <a class="header__logo-link" href="#">
+          <picture>
+            <source
+              media="(min-width:1440px)"
+              srcset="img/header/header-logo-desktop.svg"
+              width="70"
+              height="59"
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="img/header/header-logo-tablet.svg"
+              width="60"
+              height="50"
+            />
+            <img
+              class="header__logo"
+              src="img/header/header-logo.svg"
+              width="33"
+              height="38"
+              alt="Логотип CatEnergy"
+            />
+          </picture>
+        </a>
+        <a class="header__font-logo-link" href="#">
+          <svg class="header__font-logo">
+            <use href="img/sprite/sprite.svg#font-logo"></use>
+          </svg>
+        </a>
+
         <nav class="header__navigation navigation">
           <button
             class="navigation__burger-menu navigation__burger-menu--closed"
@@ -350,14 +355,10 @@
             class="before-after-slider__slider-line"
             aria-hidden="true"
           ></div>
-          <div
-            class="before-after-slider__slider-button-wrapper"
-            aria-hidden="true"
-          >
-            <svg class="before-after-slider__slider-button">
-              <use href="img/sprite/sprite.svg#slider-button"></use>
-            </svg>
-          </div>
+
+          <svg class="before-after-slider__slider-button">
+            <use href="img/sprite/sprite.svg#slider-button"></use>
+          </svg>
         </div>
       </section>
     </main>
@@ -382,9 +383,11 @@
 
       <div class="footer__social footer__social--bg-c social main-container">
         <div class="social__logo-wrapper">
-          <svg class="social__font-logo">
-            <use href="img/sprite/sprite.svg#font-logo"></use>
-          </svg>
+          <a class="social__font-logo-link" href="#">
+            <svg class="social__font-logo">
+              <use href="img/sprite/sprite.svg#font-logo"></use>
+            </svg>
+          </a>
         </div>
         <ul class="footer__social-list social-list">
           <li class="social-list__item">

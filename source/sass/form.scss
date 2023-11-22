@@ -114,32 +114,6 @@
   }
 }
 
-.form__user-contacts-header {
-  @include tablet-min-width {
-    margin-bottom: 76px;
-  }
-}
-
-.form__user-contacts-header > .subtitle__text {
-  width: 185px;
-
-  @include tablet-min-width {
-    width: unset;
-  }
-}
-
-.form__user-contacts-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
-
-  @include desktop-min-width {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
-  }
-}
-
 .form__comments {
   margin: 0;
   padding: 0;

@@ -1,0 +1,27 @@
+@import "lib";
+
+.user-contacts__header {
+  @include tablet-min-width {
+    margin-bottom: 76px;
+  }
+}
+
+.user-contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+
+  @include desktop-min-width {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+  }
+}
+
+.user-contacts__subtitle {
+  width: 185px;
+
+  @include tablet-min-width {
+    width: unset;
+  }
+}
