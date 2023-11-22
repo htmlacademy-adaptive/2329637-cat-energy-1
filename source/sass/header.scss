@@ -6,10 +6,10 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 9px;
 
   @include tablet-min-width {
-    padding-top: 25px;
+    padding-top: 22px;
     justify-content: flex-start;
   }
 
@@ -20,6 +20,7 @@
 
 .header__logo {
   margin-right: 5px;
+  flex-shrink: 0;
 
   @include tablet-min-width {
     margin-right: 13px;
@@ -31,7 +32,7 @@
 }
 
 .header__navigation {
-  margin-left: 5px;
+  margin: 0 1px 8px 14px;
 
   @include tablet-min-width {
     flex-grow: 1;
@@ -39,8 +40,49 @@
 }
 
 .header__font-logo {
+  width: 101px;
+  height: 18px;
+  margin-bottom: 6px;
+
   @include tablet-min-width {
     margin-right: 20px;
     flex-shrink: 0;
+  }
+
+  @include desktop-min-width {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+.header__logo-link {
+  display: flex;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @include tablet-min-width {
+    &:hover + .header__font-logo-link {
+      opacity: 0.8;
+    }
+
+    &:active + .header__font-logo-link {
+      opacity: 0.6;
+    }
+  }
+}
+
+.header__font-logo-link {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

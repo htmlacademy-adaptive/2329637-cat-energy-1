@@ -3,6 +3,16 @@
 .footer__social {
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @include tablet-min-width {
+    padding-top: 43px;
+    padding-bottom: 45px;
+  }
+
+  @include desktop-min-width {
+    padding-bottom: 55px;
+    padding-top: 53px;
+  }
 }
 
 .footer__social--bg-c {
@@ -10,8 +20,12 @@
 }
 
 .footer__social-list {
-  padding: 18px 0;
-  border-top: 2px solid $color-gray-dark;
-  border-bottom: 2px solid $color-gray-dark;
+  padding: 20px 0 19px 0;
+  border-top: 1px solid $color-gray-dark;
+  border-bottom: 1px solid $color-gray-dark;
   width: 100%;
+
+  @include tablet-min-width {
+    width: 33%;
+  }
 }

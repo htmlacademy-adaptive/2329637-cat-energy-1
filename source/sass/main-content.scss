@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
-    margin-bottom: 71px;
+    margin-bottom: 58px;
   }
 }
 
@@ -21,10 +21,10 @@
   margin-bottom: 20px;
   align-items: center;
   background-color: $color-gray-light;
-  padding: 20px 24px;
+  padding: 23px 20px 17px;
 
   @include tablet-min-width {
-    padding: 77px 53px 53px;
+    padding: 77px 64px 59px 53px;
     margin-bottom: 30px;
   }
 
@@ -36,7 +36,7 @@
 }
 
 .main-content__header {
-  margin: 0 0 40px;
+  margin: 0 0 43px;
   word-break: break-word;
 
   @include tablet-min-width {
@@ -54,8 +54,12 @@
   margin: 0 0 48px;
   padding: 0;
 
+  @include tablet-min-width {
+    margin: 0 0 46px;
+  }
+
   @include desktop-min-width {
     grid-column: 1 / -1;
-    margin-bottom: 69px;
+    margin-bottom: 24px;
   }
 }

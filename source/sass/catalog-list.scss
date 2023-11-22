@@ -18,8 +18,9 @@
   }
 
   @include desktop-min-width {
-    gap: 141px 80px;
+    gap: 143px 80px;
     padding: 0 110px;
+    margin-bottom: 77px;
   }
 }
 
@@ -38,5 +39,5 @@
 }
 
 .catalog-list__item:last-child {
-  padding-top: 25px;
+  padding-top: 24px;
 }

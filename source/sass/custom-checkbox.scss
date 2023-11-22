@@ -6,6 +6,11 @@
   word-break: break-word;
   gap: 15px;
 
+  &--disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
   @include tablet-min-width {
     gap: 20px;
   }
@@ -38,6 +43,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  @include tablet-min-width {
+    width: 40px;
+    height: 40px;
+
+    &::after {
+      transform: scale(1.4) translate(-34%, -42%);
+    }
   }
 }
 

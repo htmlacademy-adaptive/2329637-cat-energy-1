@@ -5,11 +5,15 @@
 }
 
 .catalog__header {
-  margin: 0 0 41px;
+  margin: 0 0 39px;
   padding-top: 27px;
 
   @include tablet-min-width {
     padding-top: 51px;
     margin-bottom: 165px;
+  }
+
+  @include desktop-min-width {
+    padding-top: 60px;
   }
 }

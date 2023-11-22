@@ -7,26 +7,49 @@
   width: 100%;
 
   @include tablet-min-width {
-    width: auto;
-    max-width: 33%;
+    width: 33%;
     gap: 23px;
+    justify-content: flex-end;
   }
 }
 
 .partners__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  margin-top: 5px;
+  gap: 23px;
+  width: 100%;
+
   text-decoration: none;
   color: $color-black-dark;
   word-break: break-word;
 
+  &:hover .partners__icon {
+    fill: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @include tablet-min-width {
-    font-size: 16px;
+    justify-content: flex-end;
     line-height: 20px;
+    margin-top: 0;
+    width: fit-content;
   }
 }
 
 .partners__logo {
   display: flex;
   flex-shrink: 0;
+}
+
+.partners__icon {
+  width: 27px;
+  height: 34px;
 }
 
 .partners__wrapper {

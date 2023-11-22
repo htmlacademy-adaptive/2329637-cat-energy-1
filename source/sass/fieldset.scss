@@ -18,7 +18,7 @@
 
 .fieldset__input {
   width: 10px;
-  padding: 12px 15px;
+  padding: 14px 15px 10px;
   flex-grow: 1;
 
   font-size: 16px;
@@ -27,8 +27,26 @@
   font-family: "Oswald", sans-serif;
   color: $color-black-dark;
 
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    --webkit-appearance: none;
+  }
+
+  &:user-invalid {
+    box-shadow: inset 0 0 0 2px $color-error;
+    border-color: transparent;
+  }
+
+  &:user-invalid ~ .fieldset__icon {
+    stroke: $color-error;
+  }
+
+  .fieldset__input:hover ~ .fieldset__icon {
+    fill: #68b738;
+  }
+
   @include tablet-min-width {
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 20px;
   }
 }
@@ -37,7 +55,7 @@
   width: 100%;
   min-height: 150px;
   box-sizing: border-box;
-  padding: 14px;
+  padding: 10px 19px;
   resize: none;
 
   font-family: "Oswald", sans-serif;
@@ -48,9 +66,29 @@
     min-height: 175px;
     font-size: 20px;
   }
+
+  @include desktop-min-width {
+    padding: 8px 19px;
+  }
+}
+
+.fieldset__input:focus ~ .fieldset__icon {
+  stroke: $color-green;
 }
 
 .fieldset__icon {
   position: absolute;
-  right: 12px;
+  right: 14px;
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: $color-black;
+
+  &--error {
+    stroke: $color-error;
+  }
+
+  @include desktop-min-width {
+    right: 16px;
+  }
 }

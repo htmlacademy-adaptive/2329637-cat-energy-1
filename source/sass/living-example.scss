@@ -5,38 +5,41 @@
   position: relative;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 40px;
-  padding-top: 25px;
+  padding-bottom: 36px;
+  padding-top: 27px;
 
   &--bg-c {
     background-color: $color-gray;
   }
 
   @include tablet-min-width {
+    padding-bottom: 97px;
     padding-top: 45px;
     border-top: 1px solid $color-gray-dark;
 
     &--bg-c {
       background-color: unset;
-      background-image: linear-gradient(180deg, $color-white 0%, $color-white 55%, $before-after-slider-color 55%, $before-after-slider-color 100%);
+      background-image: linear-gradient(180deg, $color-white 0%, $color-white 57%, $before-after-slider-color 57%, $before-after-slider-color 100%);
     }
   }
 
   @include desktop-min-width {
+    border-top: none;
     display: grid;
-    gap: 60px 79px;
-    grid-template-columns: 1fr 1fr;
+    gap: 60px 218px;
+    grid-template-columns: 432px auto;
     grid-template-rows: auto auto 1fr;
+    padding-bottom: 71px;
 
     &--bg-c {
       background-color: unset;
-      background-image: linear-gradient(180deg, $color-white 0%, $color-white 30%, $before-after-slider-color 30%, $before-after-slider-color 100%);
+      background-image: linear-gradient(180deg, $color-white 0%, $color-white 28%, $before-after-slider-color 28%, $before-after-slider-color 100%);
     }
   }
 }
 
 .living-example__header {
-  margin: 0 0 40px;
+  margin: 0 0 42px;
   align-self: flex-start;
 
   @include tablet-min-width {
@@ -70,27 +73,29 @@
 
 .living-example__wrapper {
   background-color: inherit;
+  width: 100%;
 
   @include tablet-min-width {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    margin-bottom: 79px;
   }
 
   @include desktop-min-width {
     align-self: start;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 0;
   }
 }
 
 .living-example__results-wrapper {
   display: flex;
   background-color: inherit;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 15px;
-  margin-bottom: 34px;
+  margin-bottom: 42px;
 
   @include tablet-min-width {
     gap: 43px;
@@ -102,17 +107,21 @@
   font-size: 14px;
   line-height: 20px;
   margin: 0 0 20px;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
+  text-transform: uppercase;
 
   @include tablet-min-width {
     font-size: 20px;
-    line-height: 20px;
-    width: 175px;
+    line-height: 28px;
+    margin: 8px 0 20px 0;
+    width: 185px;
     text-align: right;
   }
 
   @include desktop-min-width {
+    display: flex;
+    gap: 66px;
     width: auto;
     margin: 0;
   }

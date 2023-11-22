@@ -9,17 +9,22 @@
     padding-right: 70px;
     padding-left: 70px;
   }
+
+  @include tablet-min-width {
+    padding-left: 80px;
+    gap: 91px;
+  }
 }
 
 .contacts__text {
   margin: 0;
-  padding-right: 10px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   word-break: break-word;
   width: 140px;
+  text-transform: uppercase;
 
   @include tablet-min-width {
     max-width: 159px;
@@ -27,25 +32,34 @@
     line-height: 26px;
     width: 50%;
   }
+
+  @include desktop-min-width {
+    align-self: start;
+  }
 }
 
 .contacts__address {
   margin: 0;
+  line-height: 20px;
   word-break: break-word;
   width: 140px;
 
   @include tablet-min-width {
     max-width: 180px;
     font-size: 16px;
-    line-height: 20px;
     text-align: right;
     text-align-last: right;
     width: 50%;
+  }
+
+  @include desktop-min-width {
+    text-align: left;
+    text-align-last: left;
   }
 }
 
 .contacts__town {
   @include tablet-min-width {
-    line-height: 50px;
+    line-height: 60px;
   }
 }

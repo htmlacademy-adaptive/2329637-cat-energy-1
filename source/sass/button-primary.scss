@@ -3,4 +3,12 @@
 .button-primary {
   background-color: $color-green;
   color: $color-white;
+
+  &:hover {
+    background-color: $button-primary-hover;
+  }
+
+  &:active {
+    color: $color-white-active;
+  }
 }

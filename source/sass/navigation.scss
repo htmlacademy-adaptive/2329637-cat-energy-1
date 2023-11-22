@@ -17,12 +17,12 @@
     max-width: 700px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     justify-content: flex-end;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    gap: 10px 33px;
+    gap: 10px 26px;
   }
 }
 
@@ -53,7 +53,6 @@
     display: flex;
     position: unset;
     justify-content: flex-end;
-    flex-grow: 1;
   }
 }
 
@@ -61,7 +60,7 @@
   display: flex;
   justify-content: center;
   text-decoration: none;
-  padding: 22px 20px 24px;
+  padding: 17px 4px 8px;
   background-color: $color-white;
   width: 100%;
   box-sizing: border-box;
@@ -70,6 +69,15 @@
   border-top: 1px solid $color-gray;
   color: $color-black;
   font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @include tablet-min-width {
     background-color: unset;
@@ -85,6 +93,7 @@
   @include desktop-min-width {
     font-size: 20px;
     line-height: normal;
+    padding: 17px 3px 8px;
 
     &--color {
       color: $color-white;
@@ -100,7 +109,6 @@
   height: 24px;
   border: none;
   display: flex;
-  padding: 0;
   cursor: pointer;
 
   @include tablet-min-width {
