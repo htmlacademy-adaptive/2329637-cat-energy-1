@@ -27,26 +27,19 @@
 }
 
 .navigation__wrapper {
-  &--closed {
-    display: none;
-  }
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 65px;
+  z-index: 1;
 
   &--nojs {
     display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 65px;
-    z-index: 1;
   }
 
   &--opened {
     display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 65px;
-    z-index: 1;
   }
 
   @include tablet-min-width {
@@ -72,11 +65,16 @@
   text-transform: uppercase;
 
   &:hover {
-    opacity: 0.6;
+    background-color: $color-gray-light;
+  }
+
+  &:focus {
+    background-color: $color-gray-light;
+    outline: none;
   }
 
   &:active {
-    opacity: 0.3;
+    color: $color-black-active;
   }
 
   @include tablet-min-width {
@@ -87,6 +85,19 @@
 
     &--current {
       border-bottom: 2px solid $color-green;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus {
+      opacity: 0.6;
+      background-color: unset;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
@@ -111,12 +122,6 @@
   display: flex;
   cursor: pointer;
 
-  @include tablet-min-width {
-    display: none;
-  }
-}
-
-.navigation__burger-menu--closed {
   &::before {
     content: "";
     position: absolute;
@@ -130,6 +135,10 @@
       0 8px $color-black,
       0 -8px $color-black;
   }
+
+  @include tablet-min-width {
+    display: none;
+  }
 }
 
 .navigation__burger-menu--opened {
@@ -142,6 +151,7 @@
     width: 24px;
     height: 2px;
     background-color: $color-black;
+    box-shadow: none;
   }
 
   &::after {
