@@ -88,11 +88,13 @@
     }
 
     &:hover {
+      background-color: unset;
       opacity: 0.6;
     }
 
     &:focus {
       opacity: 0.6;
+      outline: auto;
       background-color: unset;
     }
 
@@ -109,6 +111,11 @@
     &--color {
       color: $color-white;
       border-color: $color-white;
+    }
+
+    &:active {
+      opacity: 0.3;
+      color: $color-white;
     }
   }
 }
