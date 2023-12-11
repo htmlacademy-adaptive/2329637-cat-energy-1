@@ -24,7 +24,7 @@
   font-size: 16px;
   line-height: 19px;
   border: 1px solid $color-special-gray;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: $color-black-dark;
 
   &::-webkit-outer-spin-button,
@@ -58,7 +58,7 @@
   padding: 10px 19px;
   resize: none;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   border: 1px solid $color-special-gray;
 
