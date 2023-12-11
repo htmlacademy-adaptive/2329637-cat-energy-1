@@ -59,7 +59,7 @@ const copyImages = () => {
 //WebP
 
 const optimizeWebP = () => {
-  return gulp.src('source/img/**/*.webp')
+  return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh({
       webp: {}
     }))
