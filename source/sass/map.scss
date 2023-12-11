@@ -34,6 +34,10 @@
 
 .map__contacts--bg {
   background-color: $color-gray-light;
+
+  @include desktop-min-width {
+    background-color: $color-white;
+  }
 }
 
 .map__iframe {

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png" />
@@ -43,15 +43,10 @@
         </a>
 
         <nav class="header__navigation navigation">
-          <button
-            class="navigation__burger-menu navigation__burger-menu--closed"
-            type="button"
-          >
+          <button class="navigation__burger-menu" type="button">
             <span class="visually-hidden"> Открыть меню </span>
           </button>
-          <div
-            class="navigation__wrapper navigation__wrapper--closed navigation__wrapper--nojs"
-          >
+          <div class="navigation__wrapper navigation__wrapper--nojs">
             <ul class="navigation__list">
               <li class="navigation__item">
                 <a
@@ -88,6 +83,26 @@
         <div class="hero__background-wrapper">
           <picture>
             <source
+              type="image/webp"
+              media="(min-width:1440px)"
+              srcset="
+                img/hero/index-background-desktop.webp    1x,
+                img/hero/index-background-desktop@2x.webp 2x
+              "
+              width="720"
+              height="694"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                img/hero/index-background.webp    1x,
+                img/hero/index-background@2x.webp 2x
+              "
+              width="320"
+              height="302"
+            />
+
+            <source
               media="(min-width:1440px)"
               srcset="
                 img/hero/index-background-desktop.jpg    1x,
@@ -114,6 +129,35 @@
           занялся собой? займись котом!
         </p>
         <picture>
+          <source
+            type="image/webp"
+            media="(min-width:1440px)"
+            srcset="
+              img/hero/index-can-desktop.webp    1x,
+              img/hero/index-can-desktop@2x.webp 2x
+            "
+            width="552"
+            height="499"
+          />
+          <source
+            type="image/webp"
+            media="(min-width:768px)"
+            srcset="
+              img/hero/index-can-tablet.webp    1x,
+              img/hero/index-can-tablet@2x.webp 2x
+            "
+            width="709"
+            height="609"
+          />
+          <source
+            type="image/webp"
+            srcset="
+              img/hero/index-can-mobile.webp    1x,
+              img/hero/index-can-mobile@2x.webp 2x
+            "
+            width="280"
+            height="270"
+          />
           <source
             media="(min-width:1440px)"
             srcset="
@@ -189,7 +233,12 @@
               Energy Pro поможет Вашему коту нарастить необходимые мышцы!
             </p>
             <div class="program__link-wrapper">
-              <a class="program__link" href="#"> каталог pro </a>
+              <a class="program__link" href="#">
+                каталог pro
+                <svg class="program__link-arrow">
+                  <use href="img/sprite/sprite.svg#icon-arrow"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -453,7 +502,7 @@
       </div>
     </footer>
 
-    <script src="js/before-after-slider.js"></script>
-    <script src="js/burger-menu.js"></script>
+    <script src="js/before-after-slider.min.js"></script>
+    <script src="js/burger-menu.min.js"></script>
   </body>
 </html>
