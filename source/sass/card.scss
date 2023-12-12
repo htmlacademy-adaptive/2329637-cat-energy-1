@@ -50,7 +50,7 @@
     &--other-products {
       grid-template-columns: 1fr 1fr 245px;
       align-items: center;
-      padding: 17px 0 14px;
+      padding: 16px 0 15px;
       gap: 0;
     }
   }
@@ -151,7 +151,7 @@
   }
 
   @include desktop-min-width {
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 
     &--show-more {
       margin-bottom: 27px;

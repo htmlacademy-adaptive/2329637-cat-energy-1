@@ -38,4 +38,8 @@
   &:active {
     opacity: 0.6;
   }
+
+  @include tablet-min-width {
+    display: flex;
+  }
 }

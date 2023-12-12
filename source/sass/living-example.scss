@@ -95,10 +95,14 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 15px;
-  margin-bottom: 42px;
+  margin-bottom: 11px;
 
   @include tablet-min-width {
     gap: 43px;
+  }
+
+  @include desktop-min-width {
+    margin-bottom: 43px;
   }
 }
 

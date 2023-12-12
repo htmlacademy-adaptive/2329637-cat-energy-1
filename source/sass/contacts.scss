@@ -8,11 +8,11 @@
     justify-content: space-between;
     padding-right: 70px;
     padding-left: 70px;
+    gap: 91px;
   }
 
-  @include tablet-min-width {
+  @include desktop-min-width {
     padding-left: 80px;
-    gap: 91px;
   }
 }
 
