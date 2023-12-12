@@ -6,6 +6,10 @@
   word-break: break-word;
   gap: 15px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &--disabled {
     opacity: 0.3;
     cursor: default;

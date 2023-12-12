@@ -58,6 +58,7 @@
 
 .header__logo-link {
   display: flex;
+  transition: opacity 0.3s ease;
 
   &:hover {
     opacity: 0.8;
@@ -79,6 +80,8 @@
 }
 
 .header__font-logo-link {
+  transition: opacity 0.3s ease;
+
   &:hover {
     opacity: 0.8;
   }

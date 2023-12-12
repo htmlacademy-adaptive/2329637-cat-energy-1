@@ -3,6 +3,7 @@
 .button-primary {
   background-color: $color-green;
   color: $color-white;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
 
   &:hover {
     background-color: $button-primary-hover;

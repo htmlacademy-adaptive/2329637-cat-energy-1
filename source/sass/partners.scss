@@ -25,6 +25,7 @@
   text-decoration: none;
   color: $color-black-dark;
   word-break: break-word;
+  transition: opacity 0.3s ease;
 
   &:hover .partners__icon {
     fill: $color-green;
@@ -51,6 +52,7 @@
   width: 27px;
   height: 34px;
   fill: $color-black-light;
+  transition: fill 3.3s ease;
 }
 
 .partners__wrapper {

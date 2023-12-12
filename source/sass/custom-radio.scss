@@ -6,6 +6,10 @@
   word-break: break-word;
   gap: 15px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &--disabled {
     opacity: 0.3;
     cursor: default;
@@ -24,6 +28,10 @@
 
   &:focus ~ .custom-radio__checkmark {
     outline: 2px solid $color-black;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

@@ -16,11 +16,13 @@ import browser from 'browser-sync';
 // Styles
 
 export const styles = () => {
-  return gulp
-    .src('source/sass/style.scss', { sourcemaps: true })
+  return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([autoprefixer(), csso()]))
+    .pipe(postcss([
+      autoprefixer(),
+      csso()
+    ]))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
@@ -85,7 +87,7 @@ const sprite = () => {
 
 // COPY
 
-export const copy = (done) => {
+const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',

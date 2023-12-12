@@ -152,6 +152,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $color-black;
+  transition: opacity 0.3s ease;
 
   &:hover {
     opacity: 0.6;
