@@ -61,6 +61,12 @@
   }
 }
 
+.form__cat-info .label {
+  @include tablet-min-width {
+    max-width: 220px;
+  }
+}
+
 .form__radio-buttons-wrapper {
   display: flex;
   flex-direction: column;
@@ -112,6 +118,10 @@
     margin-bottom: 0;
     grid-column: 1 / -1;
   }
+}
+
+.form__user-contacts .fieldset__input {
+  padding: 10px 40px 10px 20px;
 }
 
 .form__comments {

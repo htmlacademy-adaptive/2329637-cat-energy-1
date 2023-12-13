@@ -229,6 +229,10 @@
 .card__info-right {
   display: flex;
   align-items: center;
+
+  @include desktop-min-width {
+    flex-shrink: 0;
+  }
 }
 
 .card__button {

@@ -13,8 +13,12 @@
   }
 
   @include desktop-min-width {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto) 1fr;
     min-height: 566px;
     margin-bottom: 81px;
+    position: static;
   }
 }
 
@@ -46,8 +50,7 @@
   @include desktop-min-width {
     display: flex;
     left: 50%;
-    top: -130px;
-    height: 695px;
+    height: 694px;
   }
 }
 
@@ -125,6 +128,17 @@
   }
 }
 
+.hero__image-wrapper {
+
+  @include desktop-min-width {
+    position: relative;
+    top: 14px;
+    right: 171px;
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+  }
+}
+
 .hero__image {
   display: block;
 
@@ -137,9 +151,6 @@
   }
 
   @include desktop-min-width {
-    position: absolute;
-    top: 14px;
-    left: 58%;
-    transform: translateX(-50%);
+    position: relative;
   }
 }

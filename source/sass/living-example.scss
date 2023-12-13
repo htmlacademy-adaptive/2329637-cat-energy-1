@@ -106,6 +106,10 @@
   }
 }
 
+.living-example__priсe {
+  flex-shrink: 0;
+}
+
 .living-example__cost {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
@@ -114,6 +118,7 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+  word-break: break-word;
 
   @include tablet-min-width {
     font-size: 20px;
