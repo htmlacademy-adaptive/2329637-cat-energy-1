@@ -9,6 +9,10 @@
     background-color: $button-primary-hover;
   }
 
+  &:focus {
+    background-color: $button-primary-hover;
+  }
+
   &:active {
     color: $color-white-active;
   }

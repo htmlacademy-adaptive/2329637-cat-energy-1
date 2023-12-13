@@ -31,6 +31,10 @@
     fill: $color-green;
   }
 
+  &:focus .partners__icon {
+    fill: $color-green;
+  }
+
   &:active {
     opacity: 0.3;
   }

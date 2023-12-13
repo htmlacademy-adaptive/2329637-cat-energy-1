@@ -9,6 +9,10 @@
     background-color: $button-secondary-hover;
   }
 
+  &:focus {
+    background-color: $button-secondary-hover;
+  }
+
   &:active {
     opacity: 0.8;
   }
