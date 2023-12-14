@@ -7,13 +7,9 @@
   overflow: hidden;
   --position: 50%;
   background-color: inherit;
-  width: auto;
-  max-width: 552px;
-  height: auto;
 
-  @include desktop-min-width {
-    top: -6px;
-    left: 14px;
+  @include tablet-min-width {
+    width: 560px;
   }
 }
 
@@ -88,6 +84,7 @@
   left: var(--position);
   transform: translateX(-50%);
   pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 .before-after-slider__slider-button {
@@ -102,4 +99,5 @@
   pointer-events: none;
   fill: $color-black-light;
   stroke: $color-black-light;
+  transition: stroke 0.3s ease, opacity 0.3s ease;
 }

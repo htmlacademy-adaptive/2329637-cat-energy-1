@@ -16,7 +16,7 @@
     position: relative;
     display: grid;
     align-items: start;
-    gap: 22px 60px;
+    gap: 22px 56px;
     grid-template-columns: 1fr auto;
     grid-template-areas:
       "heading image"
@@ -25,7 +25,7 @@
   }
 
   @include desktop-min-width {
-    gap: 27px 62px;
+    gap: 25px 62px;
     align-items: center;
     grid-template-columns: auto 1fr;
     grid-template-areas:
@@ -45,10 +45,12 @@
   font-size: 24px;
   line-height: 37px;
   word-break: break-word;
+  letter-spacing: -0.9px;
 
   @include tablet-min-width {
     font-size: 34px;
     line-height: 36px;
+    letter-spacing: 0.1px;
   }
 }
 
@@ -96,7 +98,7 @@
     }
 
     &--power {
-      width: 268px;
+      width: 276px;
       height: 112px;
     }
   }
@@ -142,7 +144,7 @@
   padding-right: 13px;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 16px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -151,8 +153,15 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $color-black;
+  transition: opacity 0.3s ease;
+
+  word-break: break-word;
 
   &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
     opacity: 0.6;
   }
 
@@ -163,20 +172,26 @@
   @include tablet-min-width {
     gap: 25px;
     font-size: 20px;
+    line-height: 19px;
     padding-right: 21px;
   }
 }
 
 .program__link:hover .program__link-arrow {
   transform-origin: left;
-  transform: scaleX(1.5);
-  transition: transform 0.5s 0.1s;
+  transform: scaleX(1.2);
+}
+
+.program__link:focus .program__link-arrow {
+  transform-origin: left;
+  transform: scaleX(1.2);
 }
 
 .program__link-arrow {
   width: 32px;
-  height: 10px;
-  transition: 1s;
+  height: 12px;
+  transition: transform 0.3s ease, transform-origin 0.3s;
+  flex-shrink: 0;
 }
 
 .program__link-wrapper {

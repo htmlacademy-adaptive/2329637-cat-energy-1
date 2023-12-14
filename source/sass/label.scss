@@ -6,6 +6,7 @@
   line-height: 18px;
   font-size: 16px;
   cursor: pointer;
+  word-break: break-word;
 
   @include tablet-min-width {
     font-size: 20px;

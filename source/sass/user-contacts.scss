@@ -9,7 +9,11 @@
 .user-contacts__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 13px;
+
+  @include tablet-min-width {
+    gap: 20px;
+  }
 
   @include desktop-min-width {
     display: grid;

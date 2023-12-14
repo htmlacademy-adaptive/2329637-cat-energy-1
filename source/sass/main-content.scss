@@ -21,15 +21,15 @@
   margin-bottom: 20px;
   align-items: center;
   background-color: $color-gray-light;
-  padding: 23px 20px 17px;
+  padding: 23px 20px 20px;
 
   @include tablet-min-width {
-    padding: 77px 64px 59px 53px;
+    padding: 77px 64px 60px 53px;
     margin-bottom: 30px;
   }
 
   @include desktop-min-width {
-    padding: 47px 67px 59px 52px;
+    padding: 47px 65px 66px 52px;
     margin-bottom: 0;
     grid-column: span 2;
   }
@@ -40,7 +40,7 @@
   word-break: break-word;
 
   @include tablet-min-width {
-    padding-top: 15px;
+    padding-top: 14px;
     margin-bottom: 32px;
   }
 

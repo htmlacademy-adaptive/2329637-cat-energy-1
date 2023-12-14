@@ -31,7 +31,7 @@
   <body>
     <header class="header">
       <div class="header__wrapper main-container">
-        <a class="header__logo-link" href="#">
+        <a class="header__logo-link" href="index.html">
           <picture>
             <source
               media="(min-width:1440px)"
@@ -53,8 +53,9 @@
               alt="Логотип CatEnergy"
             />
           </picture>
-        </a>
-        <a class="header__font-logo-link" href="#">
+          <span class="visually-hidden">
+            Шрифтовой логотип сайта Cat Energy.
+          </span>
           <svg class="header__font-logo">
             <use href="img/sprite/sprite.svg#font-logo"></use>
           </svg>
@@ -67,10 +68,10 @@
           <div class="navigation__wrapper navigation__wrapper--nojs">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a class="navigation__link" href="./index.html">Главная </a>
+                <a class="navigation__link" href="index.html">Главная </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="./catalog.html"
+                <a class="navigation__link" href="catalog.html"
                   >Каталог продукции
                 </a>
               </li>
@@ -152,49 +153,45 @@
             class="fieldset form__radio-buttons main-container main-container--form"
           >
             <div class="form__radio-buttons-wrapper">
-              <label class="label label--uppercase">
-                <span class="custom-radio">
-                  <input
-                    class="custom-radio__button"
-                    type="radio"
-                    name="program"
-                    value="slim"
-                    checked
-                  />
-                  <span class="custom-radio__checkmark"></span>
-                  похудение
-                </span>
+              <label class="custom-radio label label--uppercase">
+                <input
+                  class="custom-radio__button"
+                  type="radio"
+                  name="program"
+                  value="slim"
+                  checked
+                />
+                <span class="custom-radio__checkmark"></span>
+                похудение
               </label>
 
-              <label class="label label--uppercase">
-                <span class="custom-radio">
-                  <input
-                    class="custom-radio__button"
-                    type="radio"
-                    name="program"
-                    value="pro"
-                  />
-                  <span class="custom-radio__checkmark"></span>
-                  набор массы
-                </span>
+              <label class="custom-radio label label--uppercase">
+                <input
+                  class="custom-radio__button"
+                  type="radio"
+                  name="program"
+                  value="pro"
+                />
+                <span class="custom-radio__checkmark"></span>
+                набор массы
               </label>
 
-              <label class="label label--uppercase">
-                <!-- если радио-кнопка неактивна добавить класс custom-radio--disabled -->
+              <!-- если радио-кнопка неактивна добавить класс custom-radio--disabled -->
 
-                <span class="custom-radio custom-radio--disabled">
-                  <!-- если инпут неактивен добавить тегу input атрибут disabled -->
+              <label
+                class="custom-radio custom-radio--disabled label label--uppercase"
+              >
+                <!-- если инпут неактивен добавить тегу input атрибут disabled -->
 
-                  <input
-                    class="custom-radio__button"
-                    type="radio"
-                    name="program"
-                    value="dont-know"
-                    disabled
-                  />
-                  <span class="custom-radio__checkmark"></span>
-                  не знаю (нужен ваш совет)
-                </span>
+                <input
+                  class="custom-radio__button"
+                  type="radio"
+                  name="program"
+                  value="dont-know"
+                  disabled
+                />
+                <span class="custom-radio__checkmark"></span>
+                не знаю (нужен ваш совет)
               </label>
             </div>
           </fieldset>
@@ -275,58 +272,52 @@
             <div
               class="form__other-products-wrapper main-container main-container--form"
             >
-              <label class="label label--uppercase">
-                <span class="custom-checkbox">
-                  <input
-                    class="custom-checkbox__button"
-                    type="checkbox"
-                    name="sweetener"
-                    checked
-                  />
-                  <span class="custom-checkbox__mark"></span>
-                  Сахарозаменитель
-                </span>
+              <label class="custom-checkbox label label--uppercase">
+                <input
+                  class="custom-checkbox__button"
+                  type="checkbox"
+                  name="sweetener"
+                  checked
+                />
+                <span class="custom-checkbox__mark"></span>
+                Сахарозаменитель
               </label>
 
-              <label class="label label--uppercase">
-                <span class="custom-checkbox">
-                  <input
-                    class="custom-checkbox__button"
-                    type="checkbox"
-                    name="drinking-water"
-                  />
-                  <span class="custom-checkbox__mark"></span>
-                  Питьевая вода
-                </span>
+              <label class="custom-checkbox label label--uppercase">
+                <input
+                  class="custom-checkbox__button"
+                  type="checkbox"
+                  name="drinking-water"
+                />
+                <span class="custom-checkbox__mark"></span>
+                Питьевая вода
               </label>
 
-              <label class="label label--uppercase">
-                <span class="custom-checkbox">
-                  <input
-                    class="custom-checkbox__button"
-                    type="checkbox"
-                    name="milk"
-                  />
-                  <span class="custom-checkbox__mark"></span>
-                  Молоко
-                </span>
+              <label class="custom-checkbox label label--uppercase">
+                <input
+                  class="custom-checkbox__button"
+                  type="checkbox"
+                  name="milk"
+                />
+                <span class="custom-checkbox__mark"></span>
+                Молоко
               </label>
 
-              <label class="label label--uppercase">
-                <!-- если радио-кнопка неактивна добавить класс custom-radio--disabled -->
+              <!-- если радио-кнопка неактивна добавить класс custom-radio--disabled -->
 
-                <span class="custom-checkbox custom-checkbox--disabled">
-                  <!-- если инпут неактивен добавить тегу input атрибут disabled -->
+              <label
+                class="custom-checkbox custom-checkbox--disabled label label--uppercase"
+              >
+                <!-- если инпут неактивен добавить тегу input атрибут disabled -->
 
-                  <input
-                    class="custom-checkbox__button"
-                    type="checkbox"
-                    name="vitamins"
-                    disabled
-                  />
-                  <span class="custom-checkbox__mark"></span>
-                  Витамины
-                </span>
+                <input
+                  class="custom-checkbox__button"
+                  type="checkbox"
+                  name="vitamins"
+                  disabled
+                />
+                <span class="custom-checkbox__mark"></span>
+                Витамины
               </label>
             </div>
           </fieldset>
@@ -367,7 +358,10 @@
 
       <div class="footer__social footer__social--bg-c social main-container">
         <div class="social__logo-wrapper">
-          <a class="social__font-logo-link" href="#">
+          <span class="visually-hidden">
+            Шрифтовой логотип сайта Cat Energy.
+          </span>
+          <a class="social__font-logo-link" href="index.html">
             <svg class="social__font-logo">
               <use href="img/sprite/sprite.svg#font-logo"></use>
             </svg>

@@ -14,7 +14,6 @@
 
   @include tablet-min-width {
     border-bottom: unset;
-    max-width: 700px;
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -23,6 +22,12 @@
     margin: 0;
     padding: 0;
     gap: 10px 26px;
+  }
+
+  @include desktop-min-width {
+    &--index-desktop {
+      max-width: 60%;
+    }
   }
 }
 
@@ -63,6 +68,7 @@
   color: $color-black;
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
+  transition: background-color 0.3s ease;
 
   &:hover {
     background-color: $color-gray-light;
@@ -82,6 +88,7 @@
     border-top: none;
     font-size: 18px;
     line-height: 24px;
+    transition: opacity 0.3s ease;
 
     &--current {
       border-bottom: 2px solid $color-green;
@@ -113,9 +120,12 @@
       border-color: $color-white;
     }
 
+    &--color:active {
+      color: $color-white;
+    }
+
     &:active {
       opacity: 0.3;
-      color: $color-white;
     }
   }
 }

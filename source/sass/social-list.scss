@@ -18,9 +18,14 @@
 .social-list__link {
   display: block;
   line-height: 0;
+  transition: opacity 0.3s ease;
 }
 
 .social-list__link:hover .social-list__icon {
+  fill: $color-green;
+}
+
+.social-list__link:focus .social-list__icon {
   fill: $color-green;
 }
 
@@ -32,4 +37,5 @@
   width: 28px;
   height: 22px;
   fill: $color-black-light;
+  transition: fill 0.3s ease, opacity 0.3s ease;
 }

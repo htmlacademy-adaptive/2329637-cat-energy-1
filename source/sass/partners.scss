@@ -25,8 +25,13 @@
   text-decoration: none;
   color: $color-black-dark;
   word-break: break-word;
+  transition: opacity 0.3s ease;
 
   &:hover .partners__icon {
+    fill: $color-green;
+  }
+
+  &:focus .partners__icon {
     fill: $color-green;
   }
 
@@ -50,6 +55,8 @@
 .partners__icon {
   width: 27px;
   height: 34px;
+  fill: $color-black-light;
+  transition: fill 0.3s ease;
 }
 
 .partners__wrapper {
