@@ -129,32 +129,32 @@ const watcher = () => {
 //BUILD
 
 export const build = gulp.series(
-  // clean,
-  // copy,
-  // optimizeImages,
+  clean,
+  copy,
+  optimizeImages,
   gulp.parallel(
     styles,
     html,
-    // javaScript,
-    // svg,
-    // sprite,
-    // optimizeWebP,
+    javaScript,
+    svg,
+    sprite,
+    optimizeWebP,
   ),
 );
 
 //DEFAULT
 
 export default gulp.series(
-  // clean,
-  // copy,
-  // copyImages,
-  // gulp.parallel(
-  //   styles,
-  //   html,
-  //   javaScript,
-  //   svg,
-  //   sprite,
-  // ),
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    javaScript,
+    svg,
+    sprite,
+  ),
   gulp.series(
     server,
     watcher
