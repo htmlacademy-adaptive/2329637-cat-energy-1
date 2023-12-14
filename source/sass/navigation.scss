@@ -120,9 +120,12 @@
       border-color: $color-white;
     }
 
+    &--color:active {
+      color: $color-white;
+    }
+
     &:active {
       opacity: 0.3;
-      color: $color-white;
     }
   }
 }

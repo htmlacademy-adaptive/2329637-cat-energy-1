@@ -28,6 +28,7 @@
     <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png" />
     <link rel="manifest" href="manifest.webmanifest" />
   </head>
+
   <body>
     <header class="header">
       <div class="header__wrapper main-container">
@@ -53,8 +54,6 @@
               alt="Логотип CatEnergy"
             />
           </picture>
-        </a>
-        <a class="header__font-logo-link" href="#">
           <span class="visually-hidden">
             Шрифтовой логотип сайта Cat Energy.
           </span>
@@ -80,7 +79,7 @@
               <li class="navigation__item">
                 <a
                   class="navigation__link navigation__link--color"
-                  href="./catalog.html"
+                  href="catalog.html"
                 >
                   Каталог продукции
                 </a>
@@ -88,7 +87,7 @@
               <li class="navigation__item">
                 <a
                   class="navigation__link navigation__link--color"
-                  href="./form.html"
+                  href="form.html"
                 >
                   подбор программы
                 </a>
@@ -208,7 +207,7 @@
         </picture>
         <a
           class="hero__button button-primary button button--long button--tall"
-          href="./form.html"
+          href="form.html"
         >
           Подобрать программу
         </a>
@@ -312,129 +311,138 @@
         </ul>
       </section>
 
-      <section class="living-example living-example--bg-c main-container">
-        <h2 class="living-example__header page-header">Живой пример</h2>
-        <p class="living-example__text living-example__text--color">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-          этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-
-        <div class="living-example__wrapper">
-          <div class="living-example__results-wrapper">
-            <div class="results">
-              <span class="results__text"> 5 кг </span>
-              <span class="results__definition"> снижение веса </span>
-            </div>
-
-            <div class="results">
-              <span class="results__text"> 60 дней </span>
-              <span class="results__definition"> затрачено времени </span>
-            </div>
-          </div>
-
-          <p class="living-example__cost">
-            затраты на питание:
-            <span class="living-example__priсe"> 15 000 руб.</span>
+      <section class="living-example">
+        <h2 class="living-example__header page-header main-container">
+          Живой пример
+        </h2>
+        <div class="living-example__text-wrapper">
+          <p
+            class="living-example__text living-example__text--color main-container"
+          >
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+            Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+            этом он не менял своих привычек и по-прежнему спит по 16 часов в
+            день.
           </p>
+
+          <div class="living-example__wrapper main-container">
+            <div class="living-example__results-wrapper">
+              <div class="results">
+                <span class="results__text"> 5 кг </span>
+                <span class="results__definition"> снижение веса </span>
+              </div>
+
+              <div class="results">
+                <span class="results__text"> 60 дней </span>
+                <span class="results__definition"> затрачено времени </span>
+              </div>
+            </div>
+
+            <p class="living-example__cost">
+              затраты на питание:
+              <span class="living-example__priсe"> 15 000 руб.</span>
+            </p>
+          </div>
         </div>
 
-        <div class="living-example__before-after-slider before-after-slider">
-          <div class="before-after-slider__image-container">
-            <picture>
-              <source
-                type="image/webp"
-                media="(min-width:768px)"
-                srcset="
-                  img/before-after-slider/cat-after-tablet.webp    1x,
-                  img/before-after-slider/cat-after-tablet@2x.webp 2x
-                "
-                width="560"
-                height="512"
-              />
-              <source
-                type="image/webp"
-                srcset="
-                  img/before-after-slider/cat-after.webp    1x,
-                  img/before-after-slider/cat-after@2x.webp 2x
-                "
-                width="280"
-                height="256"
-              />
-              <source
-                media="(min-width:768px)"
-                srcset="
-                  img/before-after-slider/cat-after-tablet.png    1x,
-                  img/before-after-slider/cat-after-tablet@2x.png 2x
-                "
-                width="560"
-                height="512"
-              />
-              <img
-                class="before-after-slider__image-after before-after-slider__image"
-                src="img/before-after-slider/cat-after.png"
-                srcset="img/before-after-slider/cat-after@2x.png 2x"
-                alt="вес кота после"
-                width="280"
-                height="256"
-              />
-            </picture>
-            <picture>
-              <source
-                type="image/webp"
-                media="(min-width:768px)"
-                srcset="
-                  img/before-after-slider/cat-before-tablet.webp    1x,
-                  img/before-after-slider/cat-before-tablet@2x.webp 2x
-                "
-                width="560"
-                height="512"
-              />
-              <source
-                type="image/webp"
-                srcset="
-                  img/before-after-slider/cat-before.webp    1x,
-                  img/before-after-slider/cat-before@2x.webp 2x
-                "
-                width="280"
-                height="256"
-              />
-              <source
-                media="(min-width:768px)"
-                srcset="
-                  img/before-after-slider/cat-before-tablet.png    1x,
-                  img/before-after-slider/cat-before-tablet@2x.png 2x
-                "
-                width="560"
-                height="512"
-              />
-              <img
-                class="before-after-slider__image-before before-after-slider__image"
-                src="./img/before-after-slider/cat-before.png"
-                srcset="img/before-after-slider/cat-before@2x.png 2x"
-                width="280"
-                height="256"
-                alt="вес кота до"
-              />
-            </picture>
-          </div>
-          <!-- step="10" -->
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value="50"
-            aria-label="Ползунок слайдера до-после."
-            class="before-after-slider__slider"
-          />
-          <div
-            class="before-after-slider__slider-line"
-            aria-hidden="true"
-          ></div>
+        <div class="living-example__before-after-slider-wrapper">
+          <div class="living-example__before-after-slider before-after-slider">
+            <div class="before-after-slider__image-container">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width:768px)"
+                  srcset="
+                    img/before-after-slider/cat-after-tablet.webp    1x,
+                    img/before-after-slider/cat-after-tablet@2x.webp 2x
+                  "
+                  width="560"
+                  height="512"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/before-after-slider/cat-after.webp    1x,
+                    img/before-after-slider/cat-after@2x.webp 2x
+                  "
+                  width="280"
+                  height="256"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    img/before-after-slider/cat-after-tablet.png    1x,
+                    img/before-after-slider/cat-after-tablet@2x.png 2x
+                  "
+                  width="560"
+                  height="512"
+                />
+                <img
+                  class="before-after-slider__image-after before-after-slider__image"
+                  src="img/before-after-slider/cat-after.png"
+                  srcset="img/before-after-slider/cat-after@2x.png 2x"
+                  alt="вес кота после"
+                  width="280"
+                  height="256"
+                />
+              </picture>
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width:768px)"
+                  srcset="
+                    img/before-after-slider/cat-before-tablet.webp    1x,
+                    img/before-after-slider/cat-before-tablet@2x.webp 2x
+                  "
+                  width="560"
+                  height="512"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    img/before-after-slider/cat-before.webp    1x,
+                    img/before-after-slider/cat-before@2x.webp 2x
+                  "
+                  width="280"
+                  height="256"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    img/before-after-slider/cat-before-tablet.png    1x,
+                    img/before-after-slider/cat-before-tablet@2x.png 2x
+                  "
+                  width="560"
+                  height="512"
+                />
+                <img
+                  class="before-after-slider__image-before before-after-slider__image"
+                  src="./img/before-after-slider/cat-before.png"
+                  srcset="img/before-after-slider/cat-before@2x.png 2x"
+                  width="280"
+                  height="256"
+                  alt="вес кота до"
+                />
+              </picture>
+            </div>
 
-          <svg class="before-after-slider__slider-button">
-            <use href="img/sprite/sprite.svg#slider-button"></use>
-          </svg>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              aria-label="Ползунок слайдера до-после."
+              class="before-after-slider__slider"
+            />
+            <div
+              class="before-after-slider__slider-line"
+              aria-hidden="true"
+            ></div>
+
+            <svg class="before-after-slider__slider-button">
+              <use href="img/sprite/sprite.svg#slider-button"></use>
+            </svg>
+          </div>
         </div>
       </section>
     </main>

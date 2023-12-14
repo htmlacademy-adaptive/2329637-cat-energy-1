@@ -12,15 +12,15 @@
     justify-content: space-evenly;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    gap: 141px 60px;
+    gap: 73px 60px;
     margin-bottom: 70px;
     padding: 0 30px;
   }
 
   @include desktop-min-width {
-    gap: 143px 80px;
+    gap: 75px 80px;
     padding: 0 110px;
-    margin-bottom: 77px;
+    margin-bottom: 76px;
   }
 }
 
@@ -29,15 +29,11 @@
   padding-bottom: 25px;
 
   @include tablet-min-width {
-    min-height: 430px;
+    height: fit-content;
     grid-column: span 2;
   }
 
   @include desktop-min-width {
     grid-column: span 1;
   }
-}
-
-.catalog-list__item:last-child {
-  padding-top: 24px;
 }

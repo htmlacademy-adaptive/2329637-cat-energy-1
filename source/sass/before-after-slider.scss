@@ -7,13 +7,9 @@
   overflow: hidden;
   --position: 50%;
   background-color: inherit;
-  width: auto;
-  max-width: 560px;
-  height: auto;
 
-  @include desktop-min-width {
-    top: -5px;
-    left: 10px;
+  @include tablet-min-width {
+    width: 560px;
   }
 }
 
