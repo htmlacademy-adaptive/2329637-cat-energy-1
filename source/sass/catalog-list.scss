@@ -9,10 +9,8 @@
 
   @include tablet-min-width {
     display: grid;
-    justify-content: space-evenly;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    gap: 73px 60px;
+    gap: 70px 60px;
     margin-bottom: 70px;
     padding: 0 30px;
   }
@@ -26,7 +24,7 @@
 
 .catalog-list__item {
   padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
 
   @include tablet-min-width {
     height: fit-content;

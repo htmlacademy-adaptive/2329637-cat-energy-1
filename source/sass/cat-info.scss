@@ -1,0 +1,9 @@
+@import "lib";
+
+.cat-info__input {
+  padding: 14px 15px 10px;
+
+  @include tablet-min-width {
+    padding: 12px 19px 9px;
+  }
+}
