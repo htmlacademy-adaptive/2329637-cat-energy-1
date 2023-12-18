@@ -56,7 +56,7 @@
           <span class="visually-hidden">
             Шрифтовой логотип сайта Cat Energy.
           </span>
-          <svg class="header__font-logo">
+          <svg class="header__font-logo" width="101" height="18">
             <use href="img/sprite/sprite.svg#font-logo"></use>
           </svg>
         </a>
@@ -105,14 +105,14 @@
           method="post"
         >
           <fieldset
-            class="fieldset form__cat-info main-container main-container--form"
+            class="fieldset form__cat-info main-container main-container--form cat-info"
           >
             <div class="fieldset__item">
               <label class="label label--uppercase" for="cat-name">
                 ИМЯ:*
               </label>
               <input
-                class="fieldset__input"
+                class="fieldset__input cat-info__input"
                 type="text"
                 placeholder="БАРСИК"
                 name="cat-name"
@@ -126,7 +126,7 @@
                 ВЕС (КГ):*</label
               >
               <input
-                class="fieldset__input"
+                class="fieldset__input cat-info__input"
                 type="number"
                 placeholder="7"
                 name="cat-mass"
@@ -140,7 +140,7 @@
                 ВОЗРАСТ (ЛЕТ):</label
               >
               <input
-                class="fieldset__input"
+                class="fieldset__input cat-info__input"
                 type="number"
                 placeholder="7"
                 name="cat-age"
@@ -211,14 +211,14 @@
                   e-mail:*</label
                 >
                 <input
-                  class="fieldset__input"
+                  class="fieldset__input user-contacts__input"
                   type="email"
                   placeholder="KUKLACHEV@GMAIL.COM"
                   name="e-mail"
                   required
                   id="email"
                 />
-                <svg class="fieldset__icon">
+                <svg class="fieldset__icon" width="20" height="20">
                   <use href="img/sprite/sprite.svg#icon-post"></use>
                 </svg>
               </div>
@@ -229,7 +229,7 @@
                 </label>
 
                 <input
-                  class="fieldset__input"
+                  class="fieldset__input user-contacts__input"
                   type="tel"
                   pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                   placeholder="8-(960)-900-60-90"
@@ -238,7 +238,7 @@
                   id="phone"
                 />
 
-                <svg class="fieldset__icon">
+                <svg class="fieldset__icon" width="20" height="20">
                   <use href="img/sprite/sprite.svg#icon-phone"></use>
                 </svg>
               </div>
@@ -362,7 +362,7 @@
             Шрифтовой логотип сайта Cat Energy.
           </span>
           <a class="social__font-logo-link" href="index.html">
-            <svg class="social__font-logo">
+            <svg class="social__font-logo" width="128" height="24">
               <use href="img/sprite/sprite.svg#font-logo"></use>
             </svg>
           </a>
@@ -375,7 +375,7 @@
               target="_blank"
             >
               <span class="visually-hidden">Мы ВКонтакте</span>
-              <svg class="social-list__icon">
+              <svg class="social-list__icon" width="28" height="22">
                 <use href="img/sprite/sprite.svg#vkontakte"></use>
               </svg>
             </a>
@@ -388,7 +388,7 @@
               target="_blank"
             >
               <span class="visually-hidden">Мы на YouTube</span>
-              <svg class="social-list__icon">
+              <svg class="social-list__icon" width="28" height="22">
                 <use href="img/sprite/sprite.svg#youtube"></use>
               </svg>
             </a>
@@ -401,7 +401,7 @@
               target="_blank"
             >
               <span class="visually-hidden">Мы в Telegram</span>
-              <svg class="social-list__icon">
+              <svg class="social-list__icon" width="28" height="22">
                 <use href="img/sprite/sprite.svg#telegram"></use>
               </svg>
             </a>
@@ -415,7 +415,7 @@
             href="https://htmlacademy.ru/intensive/adaptive"
           >
             HTML Academy
-            <svg class="partners__icon">
+            <svg class="partners__icon" width="27" height="34">
               <use href="img/sprite/sprite.svg#html-academy-logo"></use>
             </svg>
           </a>

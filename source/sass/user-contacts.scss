@@ -1,6 +1,8 @@
 @import "lib";
 
 .user-contacts__header {
+  margin-bottom: 36px;
+
   @include tablet-min-width {
     margin-bottom: 76px;
   }
@@ -28,4 +30,8 @@
   @include tablet-min-width {
     width: unset;
   }
+}
+
+.user-contacts__input {
+  padding: 14px 40px 10px 14px;
 }

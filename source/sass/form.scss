@@ -57,7 +57,7 @@
     grid-column: span 2;
     padding-right: 0;
     margin-bottom: 0;
-    gap: 20px;
+    gap: 18px;
   }
 }
 
@@ -120,17 +120,13 @@
   }
 }
 
-.form__user-contacts .fieldset__input {
-  padding: 10px 40px 10px 20px;
-}
-
 .form__comments {
   margin: 0;
   padding: 0;
   border: none;
 
   @include tablet-min-width {
-    margin-bottom: 65px;
+    margin-bottom: 63px;
   }
 
   @include desktop-min-width {
@@ -140,6 +136,8 @@
 }
 
 .form__comments-header {
+  margin-bottom: 39px;
+
   @include tablet-min-width {
     margin-bottom: 87px;
   }
@@ -177,8 +175,12 @@
 }
 
 .form__other-products-header {
+  padding-top: 21px;
+  margin-bottom: 34px;
+
   @include tablet-min-width {
     margin-bottom: 57px;
+    padding-top: 0;
   }
 }
 
@@ -195,13 +197,9 @@
 
   @include desktop-min-width {
     grid-column: 1 / -1;
-    margin-top: 0;
+    margin-top: -10px;
     margin-bottom: 79px;
-  }
-
-  @include desktop-min-width {
     gap: 80px;
-    margin-bottom: 68px;
   }
 }
 
